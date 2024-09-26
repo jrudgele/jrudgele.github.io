@@ -6,6 +6,28 @@
     <title>Joao Rudge Leite</title>
    <link href="/main.css" rel="stylesheet" type="text/css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style>
+			/* CSS styles for mobile devices */
+			@media (max-width: 600px) {
+				.column {
+					width: 100% !important;
+					display: block !important;
+				}
+			}
+			.about {
+				margin-top: 40px; /* Adjust the value based on your preference */
+			}
+		</style>
+		<script>
+			function visib(id) {
+			  var x = document.getElementById(id);
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+		</script>
 </head>
 
     
