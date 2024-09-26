@@ -3,3 +3,13 @@
     color: white;
     padding: 20px;
 }
+
+.classic-blue-background span {
+    font-size: 64px;
+    color: white;
+}
+
+/* Increase font size slightly for the rest of the content */
+body {
+    font-size: 18px; /* Default for the body text */
+}
