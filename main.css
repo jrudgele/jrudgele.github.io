@@ -27,3 +27,11 @@ body {
 
 p {
     font-size: 18px; /* Slightly larger for all paragraphs */
+}
+
+    img {
+    max-width: 100%; /* Ensures the image doesn’t go beyond the container */
+    height: auto; /* Keeps the height proportional to the width */
+}
+
+
