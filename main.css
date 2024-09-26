@@ -4,8 +4,10 @@
     padding: 20px;
 }
 
+
+/* Larger title */
 .classic-blue-background span {
-    font-size: 50px;
+    font-size: 64px;
     color: white;
 }
 
@@ -13,3 +15,15 @@
 body {
     font-size: 18px; /* Default for the body text */
 }
+
+.column {
+    font-size: 18px; /* For text in columns */
+}
+
+/* Larger headings */
+.about font[size="4"] {
+    font-size: 24px; /* Larger font for "About" heading */
+}
+
+p {
+    font-size: 18px; /* Slightly larger for all paragraphs */
