@@ -1,6 +1,6 @@
 .classic-blue-background {
     background-color: #0F4C81; /* Pantone Classic Blue */
-    color: white;
+    color: "#F9F9F9";
     padding: 20px;
 }
 
@@ -8,7 +8,7 @@
 /* Larger title */
 .classic-blue-background span {
     font-size: 40px;
-    color: white;
+    color: "#F9F9F9";
     font-family: Arial, sans-serif;
 }
 
