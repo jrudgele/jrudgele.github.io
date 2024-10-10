@@ -5,68 +5,59 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<title>Joao Rudge Leite</title>
    	<link href="/main.css" rel="stylesheet" type="text/css"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="google-site-verification" content="V0t5ypDAlo7KNVjGEvB9UZMBwe-qi1gKn1oF9N4A50M" />
 	<link rel="icon" href="https://jrudgele.github.io/Initial_Icon.ICO"/>
 	<style>
-			/* CSS styles for mobile devices */
-			@media (max-width: 600px) {
-				.column {
-					width: 100% !important;
-					display: block !important;
-				}
-			}
-			.about {
-				margin-top: 40px; /* Adjust the value based on your preference */
-			}
-		</style>
-		<script>
-			function visib(id) {
-			  var x = document.getElementById(id);
-			  if (x.style.display === "block") {
-				x.style.display = "none";
-			  } else {
-				x.style.display = "block";
-			  }
-			}
-		</script>
+		/* CSS styles */
+		.classic-blue-background {
+			background-color: #0F4C81; /* Pantone Classic Blue */
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+		header {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #0F4C81;
+			color: white;
+			padding: 20px 0;
+		}
+		hr {
+			color: #0F4C81;
+		}
+	</style>
 </head>
+<body bgcolor="#F9F9F9" text="#000000" link="#543D7d" vlink="#543D7d" alink="543D7d">
 
-    
+	<!-- Header -->
+	<header>
+		<div class="classic-blue-background">
+			<h1>Joao Rudge Leite</h1>
+			<!-- Future Navigation Links -->
+			<!-- <nav>
+				<a href="./index.html" style="text-decoration: none; color: white; font-size: 16px;">&nbsp; Home</a>
+				<a href="./research.html" style="text-decoration: none; color: white; font-size: 16px;">&nbsp; Research</a>
+				<a href="./teaching.html" style="text-decoration: none; color: white; font-size: 16px;">&nbsp; Teaching</a>
+			</nav> -->
+		</div>
+	</header>
 
-	<body bgcolor="#F9F9F9" text="#000000" link="#543D7d" vlink="#543D7d" alink="543D7d" >
+	<!-- Main Content -->
+	<main>
 		<table width="100%">
-			<!-- Title -->
-			<tr >
-				<div >
-				<td rowspan="4" width="10%"></td>
-				<td colspan="3" valign="top" class="classic-blue-background">
-					<br/>
-					<span>Joao Rudge Leite</span>
-						<!-- a href="./index.html" style="text-decoration: none; color: #002F6C; font-size: 16px;">&nbsp; Home</a -->
-						<!-- a href="./research.html" style="text-decoration: none; color: #002F6C; font-size: 16px;">&nbsp; Research</a -->
-						<!-- a href="./teaching.html" style="text-decoration: none; color: #002F6C; font-size: 16px;">&nbsp; Teaching</a -->
-					<br/>
-				</td>
-				<td rowspan="4" width="10%"></td>
-
-				
-			</tr>
-			
 			<tr>
 				<td colspan="3">
 					<hr color="#0F4C81"/>
 				</td>
 			</tr>
-			<!-- About -->
+
+			<!-- About Section -->
 			<tr>
 				<td class="column" width="200" valign="top">
 					<img src="https://jrudgele.github.io/Photo_webpage.JPG" width="227" height="304" alt="Photo" style="width: 227px; height: auto;" />
-					<br/>
 					<font face="arial" size="2" color="#000000">
-						<p>
-							<b>jrudgele@ur.rochester.edu</b>
-						</p>
+						<p><b>jrudgele@ur.rochester.edu</b></p>
 					</font>
 					<font face="arial" size="3">
 						<p>	PhD Candidate <br/>
@@ -81,31 +72,24 @@
 					</font>
 				</td>
 				<td class="column" width="20"></td>
-				<td class="column"  valign="top">
+				<td class="column" valign="top">
 					<font face="arial" color="#000000" size="3">
-						<!-- About -->
 						<div class="about">
-						<font size="4" color="#0F4C81">About</font>
-						<font size="2.5" color="#000000">
+							<font size="4" color="#0F4C81">About</font>
 							<p>I am an Economics PhD Candidate at the University of Rochester. I will be on the Job Market in 2024-2025.</p>
 							<p>My research interests are in Macroeconomics, Banking, and International Finance.</p>
-						</font>
 						</div>
-						
-						</br>
+						<br/>
 						<hr color="#0F4C81"/>
 						<br/>
 						<!-- Working Papers -->
 						<font size="4" color="#0F4C81">Working Papers</font>
-						<font size="2.5" color="#000000">
-
-							<p>
-								<a style="color: #0F4C81; font-weight: bold; text-decoration: none" target="_blank">"Heterogeneous Banks and Transmission of Monetary Policy"</a>,
-								(Draft Coming Soon) September 2024.
-								<a href="#/" onclick="visib('het_banks')" style="color: #0F4C81; font-weight: bold; text-decoration: none" >[Abstract]</a>
-							</p>
-							
-							<div id="het_banks" style="display: none;">
+						<p>
+							<a style="color: #0F4C81; font-weight: bold; text-decoration: none" target="_blank">"Heterogeneous Banks and Transmission of Monetary Policy"</a>,
+							(Draft Coming Soon) September 2024.
+							<a href="#/" onclick="visib('het_banks')" style="color: #0F4C81; font-weight: bold; text-decoration: none">[Abstract]</a>
+						</p>
+						<div id="het_banks" style="display: none;">
 							<p align="justify" style="margin-left: 25px;">
 								This paper analyzes the impact of heterogeneity in banks' funding on the transmission of monetary policy shocks.
 								Empirically, banks whose liabilities have longer maturity are less responsive to monetary shocks.
@@ -113,25 +97,11 @@
 								The funding choice is mainly driven by idiosyncratic risk and financial frictions since long-term wholesale liabilities allow banks to smooth dividends over time.
 								Using this framework, I assess the aggregate implications of monetary shocks and provide quantitative evidence that the transmission is affected by the distribution of banks' funding structure.
 							</p>
-							</div>
-							
-							<p>
-
-								<!-- Working in Progress -->
-						<font size="4" color="#0F4C81">Work in Progress</font>
-						<font size="2.5" color="#000000">
-							<p>
-								<b> "Banking Sector Exposure to Global Financial Cycle and Sovereign Debt Crises"</b>, (together with Jefferson Martinez Saavedra)
-								<!-- a href="#/" onclick="visib('abs_labordemand')" style="color: #002F6C; font-weight: bold; text-decoration: none" >[Abstract]</a !-->
-							</p>
-							
-							
-
-							
-						</font>
+						</div>
 					</font>
 				</td>
 			</tr>
 		</table>
-	</body>
+	</main>
+</body>
 </html>
