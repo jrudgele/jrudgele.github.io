@@ -14,11 +14,11 @@
 
 /* Increase font size slightly for the rest of the content */
 body {
-    font-size: 18px; /* Default for the body text */
+    font-size: 16px; /* Default for the body text */
 }
 
 .column {
-    font-size: 18px; /* For text in columns */
+    font-size: 16px; /* For text in columns */
 }
 
 /* Larger headings */
@@ -27,7 +27,7 @@ body {
 }
 
 p {
-    font-size: 18px; /* Slightly larger for all paragraphs */
+    font-size: 16px; /* Slightly larger for all paragraphs */
 }
 
     img {
