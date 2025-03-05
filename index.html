@@ -7,98 +7,102 @@
     <link href="/main.css" rel="stylesheet" type="text/css"/>
     <meta name="google-site-verification" content="V0t5ypDAlo7KNVjGEvB9UZMBwe-qi1gKn1oF9N4A50M" />
     <link rel="icon" href="https://jrudgele.github.io/Initial_Icon.ICO"/>
-    <style>
-        /* Standard body styling */
-        body {
-            background-color: #ffffff;
-            color: #0F4C81;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+   <style>
+    /* Standard body styling */
+    body {
+        background-color: #ffffff;
+        color: #0F4C81;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
-        /* Navbar styles */
-        .navbar {
-            background-color: #ffffff;
-            overflow: hidden;
-            position: relative;
-        }
+    /* Navbar styles */
+    .navbar {
+        background-color: #ffffff;
+        overflow: hidden;
+        position: relative;
+    }
 
-        .navbar a {
-            display: block;
-            color: #0F4C81;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            float: left; /* Ensure items align horizontally */
-        }
+    .navbar a {
+        display: block;
+        color: #0F4C81;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        float: left; /* Ensure items align horizontally */
+    }
 
-        .navbar a:hover {
-            background-color: #575757;
-        }
+    .navbar a:hover {
+        background-color: #575757;
+    }
 
-        .navbar .menu {
-            display: flex;
-            width: 100%;
-        }
+    .navbar .menu {
+        display: flex;
+        width: 100%;
+    }
 
-        /* Collapse the navbar items by default */
-        .navbar .menu a {
-            width: auto; /* Adjust width of links */
-            text-align: left;
-        }
+    /* Collapse the navbar items by default */
+    .navbar .menu a {
+        width: auto; /* Adjust width of links */
+        text-align: left;
+    }
 
-        /* Show the menu when the navbar is in responsive mode */
-        .navbar.responsive .menu {
-            display: block;
-            width: 100%;
-        }
+    /* Show the menu when the navbar is in responsive mode */
+    .navbar.responsive .menu {
+        display: block;
+        width: 100%;
+    }
 
-        /* Hamburger icon for mobile view */
+    /* Hamburger icon for mobile view */
+    .navbar a.icon {
+        display: none; /* Initially hidden */
+        background-color: #FFFFFF;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 14px 16px;
+        font-size: 30px;
+    }
+
+    /* Mobile view styling */
+    @media screen and (max-width: 600px) {
         .navbar a.icon {
-            display: none; /* Initially hidden */
-            background-color: #FFFFFF;
-            position: absolute;
-            right: 0;
-            top: 0;
-            padding: 14px 16px;
-            font-size: 30px;
+            display: block;
         }
 
-        /* Mobile view styling */
-        @media screen and (max-width: 600px) {
-            .navbar a.icon {
-                display: block;
-            }
-
-            .navbar a {
-                display: none;
-            }
-
-            .navbar.responsive a {
-                display: block;
-                width: 100%;
-            }
-
-            .navbar.responsive .icon {
-                display: block;
-            }
+        /* Initially hide all navbar links in mobile view */
+        .navbar a {
+            display: none;
         }
-    </style>
+
+        /* Display the links when navbar is in responsive mode */
+        .navbar.responsive a {
+            display: block;
+            width: 100%;
+        }
+
+        /* Display menu in mobile view */
+        .navbar.responsive .menu a {
+            display: block;
+            text-align: left; /* Align text to the left */
+        }
+    }
+</style>
+
+<script>
+    function toggleNav() {
+        var navbar = document.getElementById("myNavbar");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";  // Add 'responsive' class
+        } else {
+            navbar.className = "navbar";  // Remove 'responsive' class
+        }
+    }
+</script>
 </head>
 <body>
-
-    <script>
-        function toggleNav() {
-            var navbar = document.getElementById("myNavbar");
-            if (navbar.className === "navbar") {
-                navbar.className += " responsive";
-            } else {
-                navbar.className = "navbar";
-            }
-        }
-    </script>
 
     <!-- Navigation Bar -->
     <div class="navbar" id="myNavbar">
