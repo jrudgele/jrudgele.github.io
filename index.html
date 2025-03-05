@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="google-site-verification" content="V0t5ypDAlo7KNVjGEvB9UZMBwe-qi1gKn1oF9N4A50M" />
 	<link rel="icon" href="https://jrudgele.github.io/Initial_Icon.ICO"/>
-     <style>
+    <style>
         /* Standard body styling */
         body {
             background-color: ;
@@ -41,6 +41,7 @@
         .navbar .menu {
             display: none;
             width: 100%;
+            position: relative;
         }
 
         .navbar .menu a {
@@ -86,6 +87,24 @@
         }
     </style>
 </head>
+<body bgcolor="#FFFFFF" text="#0F4C81" link="#0F4C81" vlink="#0F4C81" alink="#0F4C81">
+
+    <!-- Navigation Bar -->
+    <div class="navbar" id="myNavbar">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="#research.html">Research</a>
+            <a href="https://jrudgele.github.io/Joao_CV.pdf">CV</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            var navbar = document.getElementById("myNavbar");
+            navbar.classList.toggle('responsive');
+        }
+    </script>
 <body>
 
    
