@@ -17,54 +17,73 @@
         padding: 0;
     }
 
-    /* Navbar styles */
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center items */
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+/* Navbar menu */
+.navbar .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Navbar links */
+.navbar a {
+    display: block;
+    color: #0F4C81;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
     .navbar {
-        background-color: #ffffff;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .navbar a {
         display: block;
-        color: #0F4C81;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        float: left; /* Ensure items align horizontally */
-    }
-
-    .navbar a:hover {
-        background-color: #575757;
     }
 
     .navbar .menu {
-        display: flex;
+        flex-direction: column;
         width: 100%;
+        display: none; /* Hide by default */
     }
 
-    /* Collapse the navbar items by default */
-    .navbar .menu a {
-        width: auto; /* Adjust width of links */
-        text-align: left;
-    }
-
-    /* Show the menu when the navbar is in responsive mode */
     .navbar.responsive .menu {
-        display: block;
-        width: 100%;
+        display: flex; /* Show when toggled */
     }
 
-    /* Hamburger icon for mobile view */
+    .navbar a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
     .navbar a.icon {
-        display: none; /* Initially hidden */
-        background-color: #FFFFFF;
+        display: block;
         position: absolute;
         right: 0;
         top: 0;
-        padding: 14px 16px;
         font-size: 30px;
+        padding: 14px 20px;
     }
+}
 
     /* Mobile view styling */
     @media screen and (max-width: 600px) {
