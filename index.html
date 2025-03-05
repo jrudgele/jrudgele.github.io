@@ -8,30 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="google-site-verification" content="V0t5ypDAlo7KNVjGEvB9UZMBwe-qi1gKn1oF9N4A50M" />
 	<link rel="icon" href="https://jrudgele.github.io/Initial_Icon.ICO"/>
-	<style>
-			/* CSS styles for mobile devices */
-			@media (max-width: 600px) {
-				.column {
-					width: 100% !important;
-					display: block !important;
-				}
-			}
-			.about {
-				margin-top: 40px; /* Adjust the value based on your preference */
-			}
-		</style>
-		<script>
-			function visib(id) {
-			  var x = document.getElementById(id);
-			  if (x.style.display === "block") {
-				x.style.display = "none";
-			  } else {
-				x.style.display = "block";
-			  }
-			}
-		</script>
-</head>
- <style>
+	 <style>
         /* Standard body styling */
         body {
             background-color: #FFFFFF;
@@ -43,6 +20,7 @@
         .navbar {
             overflow: hidden;
             background-color: #0F4C81;
+            position: relative;
         }
 
         .navbar a {
@@ -59,17 +37,42 @@
             background-color: #575757;
         }
 
-        /* Hide navbar links on small screens */
+        /* Collapse the navbar items by default */
+        .navbar .menu {
+            display: none;
+            width: 100%;
+        }
+
+        .navbar .menu a {
+            width: 100%;
+            text-align: left;
+            padding: 14px 16px;
+        }
+
+        /* Show the menu when the navbar is in responsive mode */
+        .navbar.responsive .menu {
+            display: block;
+        }
+
+        /* Hamburger icon for mobile view */
+        .navbar a.icon {
+            display: block;
+            background-color: #0F4C81;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 14px 16px;
+            font-size: 30px;
+        }
+
+        /* Mobile view styling */
         @media screen and (max-width: 600px) {
-            .navbar a {
-                display: none;
-                width: 100%;
-                text-align: left;
+            .navbar a.icon {
+                display: block;
             }
 
-            .navbar a.icon {
-                float: right;
-                display: block;
+            .navbar a {
+                display: none;
             }
 
             .navbar.responsive a {
@@ -78,9 +81,7 @@
             }
 
             .navbar.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
+                display: block;
             }
         }
     </style>
@@ -89,13 +90,13 @@
 
     <!-- Navigation Bar -->
     <div class="navbar" id="myNavbar">
-        <a href="#home">Home</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-            &#9776;
-        </a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#research">Research</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
 
     <script>
