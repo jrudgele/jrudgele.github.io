@@ -17,12 +17,17 @@
         padding: 0;
     }
 /* CSS styles for mobile devices */
-			@media (max-width: 600px) {
-				.column {
-					width: 100% !important;
-					display: block !important;
-				}
-			}
+@media screen and (max-width: 600px) {
+		    .column {
+		        width: 100% !important;
+		        display: block !important;
+		        text-align: center; /* Center content */
+		    }
+		    img {
+		        max-width: 80%; /* Prevent overflow */
+		        height: auto;
+		    }
+		}
 			.about {
 				margin-top: 40px; /* Adjust the value based on your preference */
 			}
@@ -105,9 +110,15 @@
 </style>
 
 <script>
- function toggleNav() {
+function toggleNav() {
     var navbar = document.getElementById("myNavbar");
-    navbar.classList.toggle("responsive");  // Toggles the class for responsive mode
+    var menu = navbar.querySelector(".menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+        menu.style.flexDirection = "column"; // Stack items vertically
+    }
 }
 </script>
 
