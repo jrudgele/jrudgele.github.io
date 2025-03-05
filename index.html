@@ -53,7 +53,8 @@
 			background-color: #543D7d;
 			color: white;
 		}
-			/* Responsive navbar for mobile devices */
+
+		/* Responsive navbar for mobile devices */
 		@media screen and (max-width: 600px) {
 			.navbar a {
 				float: none;
@@ -73,16 +74,29 @@
 		.about {
 			margin-top: 40px; /* Adjust the value based on your preference */
 		}
-</style>
-	
-     	<div class="topnav">
-		  <a class="active" href="#home">Home</a>
-		  <a href="#news">News</a>
-		  <a href="#contact">Contact</a>
-		  <a href="#about">About</a>
-	</div> 
+	</style>
+	<script>
+		function visib(id) {
+		  var x = document.getElementById(id);
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+	</script>
+</head>
 
-	<body bgcolor="#F9F9F9" text="#000000" link="#543D7d" vlink="#543D7d" alink="543D7d" >
+<body bgcolor="#F9F9F9" text="#000000" link="#543D7d" vlink="#543D7d" alink="543D7d">
+	<!-- Navigation Bar -->
+	<div class="navbar">
+		<a href="#home">Home</a>
+		<a href="#research">Research</a>
+		<a href="#teaching">Teaching</a>
+		<a href="#contact">Contact</a>
+	</div>
+
+	
 		<table width="100%">
 			<!-- Title -->
 			<tr >
