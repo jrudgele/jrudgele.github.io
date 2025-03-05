@@ -21,7 +21,6 @@
 		    .column {
 		        width: 100% !important;
 		        display: block !important;
-		        text-align: center; /* Center content */
 		    }
 		    img {
 		        max-width: 80%; /* Prevent overflow */
@@ -110,15 +109,9 @@
 </style>
 
 <script>
-function toggleNav() {
+ function toggleNav() {
     var navbar = document.getElementById("myNavbar");
-    var menu = navbar.querySelector(".menu");
-    if (menu.style.display === "flex") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "flex";
-        menu.style.flexDirection = "column"; // Stack items vertically
-    }
+    navbar.classList.toggle("responsive");  // Toggles the class for responsive mode
 }
 </script>
 
