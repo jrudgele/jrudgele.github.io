@@ -4,41 +4,131 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joao Rudge Leite - Research</title>
-    <link href="/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="/main.css" rel="stylesheet" type="text/css"/>
+    <meta name="google-site-verification" content="V0t5ypDAlo7KNVjGEvB9UZMBwe-qi1gKn1oF9N4A50M" />
+    <link rel="icon" href="https://jrudgele.github.io/Initial_Icon.ICO"/>
+   <style>
+    /* Standard body styling */
+    body {
+        background-color: #ffffff;
+        color: #0F4C81;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+/* CSS styles for mobile devices */
+@media screen and (max-width: 600px) {
+		    .column {
+		        width: 100% !important;
+		        display: block !important;
+			text-align: center; /* Center content */
+		    }
+		    img {
+		        max-width: 80%; /* Prevent overflow */
+		        height: auto;
+		    }
+		}
+			.about {
+				margin-top: 40px; /* Adjust the value based on your preference */
+			}
+		
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Menu container */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+/* Style for navbar links */
+.navbar a {
+    color: #0F4C81;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+/* Hamburger icon */
+.navbar .icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none; /* Hide menu items by default */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar.responsive .menu {
+        display: flex; /* Show menu items when active */
+    }
+
+    .navbar .icon {
+        display: block;
+        background: none;
+        border: none;
+    }
+}
+
+    /* Mobile view styling */
+    @media screen and (max-width: 600px) {
+        .navbar a.icon {
+            display: block;
+        }
+
+        /* Initially hide all navbar links in mobile view */
+        .navbar a {
+            display: none;
+        }
+
+        /* Display the links when navbar is in responsive mode */
+        .navbar.responsive a {
+            display: block;
+            width: 100%;
+        }
+
+        /* Display menu in mobile view */
+        .navbar.responsive .menu a {
+            display: block;
+            text-align: left; /* Align text to the left */
+        }
+    }
+</style>
+
+<script>
+ function toggleNav() {
+    var navbar = document.getElementById("myNavbar");
+    navbar.classList.toggle("responsive");  // Toggles the class for responsive mode
+}
+</script>
+
+<script>
+			function visib(id) {
+			  var x = document.getElementById(id);
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+</script>
+    
 </head>
 <body>
-         <div class="navbar" id="myNavbar">
-        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
-        <div class="menu">
-            <a href="index">Home</a>
-            <a href="research">Research</a>
-            <a href="https://jrudgele.github.io/Joao_CV.pdf">CV</a>
-        </div>
-    </div>
-
-    </div>
-
-    <h1>Research</h1>
-   
-    <script>
-        function toggleNav() {
-            var navbar = document.getElementById("myNavbar");
-            if (navbar.className === "navbar") {
-                navbar.className += " responsive";
-            } else {
-                navbar.className = "navbar";
-            }
-        }
-
-        function visib(id) {
-            var element = document.getElementById(id);
-            if (element.style.display === "none") {
-                element.style.display = "block";
-            } else {
-                element.style.display = "none";
-            }
-        }
-    </script>
 
     <!-- Job Market Paper -->
     <font size="4" style="font-weight: bold;" color="#0F4C81">Working Papers</font>
