@@ -32,59 +32,60 @@
 		</script>
 </head>
 	
-<style>
-		/* Navbar styles */
-		.navbar {
-			overflow: hidden;
-			background-color: #0F4C81; /* Classic Blue */
-		}
+    <style>
+        /* Standard body styling */
+        body {
+            background-color: #FFFFFF;
+            color: #0F4C81;
+            font-family: Arial, sans-serif;
+        }
 
-		.navbar a {
-			float: left;
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 20px;
-			text-decoration: none;
-			font-size: 17px;
-		}
+        /* Navbar styles */
+        .navbar {
+            overflow: hidden;
+            background-color: #0F4C81;
+        }
 
-		.navbar a:hover {
-			background-color: #543D7d;
-			color: white;
-		}
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
 
-		/* Responsive navbar for mobile devices */
-		@media screen and (max-width: 600px) {
-			.navbar a {
-				float: none;
-				width: 100%;
-				text-align: left;
-			}
-		}
-		
-		/* CSS styles for mobile devices */
-		@media (max-width: 600px) {
-			.column {
-				width: 100% !important;
-				display: block !important;
-			}
-		}
+        .navbar a:hover {
+            background-color: #575757;
+        }
 
-		.about {
-			margin-top: 40px; /* Adjust the value based on your preference */
-		}
-	</style>
-	<script>
-		function visib(id) {
-		  var x = document.getElementById(id);
-		  if (x.style.display === "block") {
-			x.style.display = "none";
-		  } else {
-			x.style.display = "block";
-		  }
-		}
-	</script>
+        /* Hide navbar links on small screens */
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                display: none;
+                width: 100%;
+                text-align: left;
+            }
+
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+
+            .navbar.responsive a {
+                display: block;
+                width: 100%;
+            }
+
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    </style>
+	
 </head>
 
 <body bgcolor="#FFFFFF" text="#0F4C81" link="#0F4C81" vlink="#0F4C81" alink="#0F4C81">
