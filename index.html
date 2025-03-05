@@ -22,66 +22,50 @@
     background-color: #ffffff;
     overflow: hidden;
     position: relative;
-    width: 100%;
     display: flex;
-    justify-content: center; /* Center items */
-    box-sizing: border-box;
-    padding: 10px 0;
-}
-
-/* Navbar menu */
-.navbar .menu {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    padding: 10px;
 }
 
-/* Navbar links */
+/* Menu container */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+/* Style for navbar links */
 .navbar a {
-    display: block;
     color: #0F4C81;
-    text-align: center;
-    padding: 14px 20px;
     text-decoration: none;
     font-size: 17px;
+    padding: 14px 16px;
 }
 
-/* Hover effect */
-.navbar a:hover {
-    background-color: #575757;
-    color: white;
+/* Hamburger icon */
+.navbar .icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-/* Mobile view */
+/* Responsive design */
 @media screen and (max-width: 600px) {
-    .navbar {
-        display: block;
-    }
-
-    .navbar .menu {
+    .menu {
+        display: none; /* Hide menu items by default */
         flex-direction: column;
         width: 100%;
-        display: none; /* Hide by default */
+        text-align: center;
     }
 
     .navbar.responsive .menu {
-        display: flex; /* Show when toggled */
+        display: flex; /* Show menu items when active */
     }
 
-    .navbar a {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .navbar a.icon {
+    .navbar .icon {
         display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        font-size: 30px;
-        padding: 14px 20px;
+        background: none;
+        border: none;
     }
 }
 
@@ -111,28 +95,23 @@
 </style>
 
 <script>
-    function toggleNav() {
-        var navbar = document.getElementById("myNavbar");
-        if (navbar.className === "navbar") {
-            navbar.className += " responsive";  // Add 'responsive' class
-        } else {
-            navbar.className = "navbar";  // Remove 'responsive' class
-        }
-    }
+ function toggleNav() {
+    var navbar = document.getElementById("myNavbar");
+    navbar.classList.toggle("responsive");  // Toggles the class for responsive mode
+}
 </script>
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <div class="navbar" id="myNavbar">
-        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
-        <div class="menu">
-            <a href="index">Home</a>
-            <a href="research">Research</a>
-            <a href="https://jrudgele.github.io/Joao_CV.pdf">CV</a>
-        </div>
+   <div class="navbar" id="myNavbar">
+    <div class="menu">
+        <a href="index">Home</a>
+        <a href="research">Research</a>
+        <a href="https://jrudgele.github.io/Joao_CV.pdf">CV</a>
     </div>
-
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+</div>
     <table width="100%">
         <!-- Title -->
         <tr>
