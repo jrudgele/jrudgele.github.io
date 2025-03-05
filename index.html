@@ -1,63 +1,63 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Joao Rudge Leite</title>
-   	<link href="/main.css" rel="stylesheet" type="text/css"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="google-site-verification" content="V0t5ypDAlo7KNVjGEvB9UZMBwe-qi1gKn1oF9N4A50M" />
-	<link rel="icon" href="https://jrudgele.github.io/Initial_Icon.ICO"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joao Rudge Leite</title>
+    <link href="/main.css" rel="stylesheet" type="text/css"/>
+    <meta name="google-site-verification" content="V0t5ypDAlo7KNVjGEvB9UZMBwe-qi1gKn1oF9N4A50M" />
+    <link rel="icon" href="https://jrudgele.github.io/Initial_Icon.ICO"/>
     <style>
         /* Standard body styling */
         body {
-            background-color: ;
+            background-color: #ffffff;
             color: #0F4C81;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         /* Navbar styles */
         .navbar {
+            background-color: #ffffff;
             overflow: hidden;
-            background-color: #FFFFFF;
             position: relative;
         }
 
         .navbar a {
-            float: left;
             display: block;
-            color:  #0F4C81;
+            color: #0F4C81;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px;
+            float: left; /* Ensure items align horizontally */
         }
 
         .navbar a:hover {
             background-color: #575757;
         }
 
-        /* Collapse the navbar items by default */
         .navbar .menu {
-            display: none;
+            display: flex;
             width: 100%;
-            position: relative;
         }
 
+        /* Collapse the navbar items by default */
         .navbar .menu a {
-            width: 100%;
+            width: auto; /* Adjust width of links */
             text-align: left;
-            padding: 14px 16px;
         }
 
         /* Show the menu when the navbar is in responsive mode */
         .navbar.responsive .menu {
             display: block;
+            width: 100%;
         }
 
         /* Hamburger icon for mobile view */
         .navbar a.icon {
-            display: block;
+            display: none; /* Initially hidden */
             background-color: #FFFFFF;
             position: absolute;
             right: 0;
@@ -87,27 +87,7 @@
         }
     </style>
 </head>
-<body bgcolor="#FFFFFF" text="#0F4C81" link="#0F4C81" vlink="#0F4C81" alink="#0F4C81">
-
-    <!-- Navigation Bar -->
-    <div class="navbar" id="myNavbar">
-        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="#research.html">Research</a>
-            <a href="https://jrudgele.github.io/Joao_CV.pdf">CV</a>
-        </div>
-    </div>
-
-    <script>
-        function toggleNav() {
-            var navbar = document.getElementById("myNavbar");
-            navbar.classList.toggle('responsive');
-        }
-    </script>
 <body>
-
-   
 
     <script>
         function toggleNav() {
@@ -120,97 +100,80 @@
         }
     </script>
 
-<body bgcolor="#FFFFFF" text="#0F4C81" link="#0F4C81" vlink="#0F4C81" alink="#0F4C81">
- <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <div class="navbar" id="myNavbar">
         <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
         <div class="menu">
             <a href="index.html">Home</a>
-            <a href="#research">Research</a>
-           	<a href="https://jrudgele.github.io/Joao_CV.pdf">CV</a>
+            <a href="#research.html">Research</a>
+            <a href="https://jrudgele.github.io/Joao_CV.pdf">CV</a>
         </div>
     </div>
-	
-		<table width="100%">
-			<!-- Title -->
-			<tr >
-				<div >
-				<td rowspan="4" width="10%"></td>
-				<td colspan="3" valign="top" >
-					<br/>
-					<span>Joao Rudge Leite</span>
-						<!-- a href="./index.html" style="text-decoration: none; color: #002F6C; font-size: 16px;">&nbsp; Home</a -->
-						<!-- a href="./research.html" style="text-decoration: none; color: #002F6C; font-size: 16px;">&nbsp; Research</a -->
-						<!-- a href="./teaching.html" style="text-decoration: none; color: #002F6C; font-size: 16px;">&nbsp; Teaching</a -->
-					<br/>
-				</td>
-				<td rowspan="4" width="10%"></td>
 
-				
-			</tr>
-			
-			<tr>
-				<td colspan="3">
-					<hr color="#0F4C81"/>
-				</td>
-			</tr>
-			<!-- About -->
-			<tr>
-				<td class="column" width="200" valign="top">
-					<img src="https://jrudgele.github.io/Photo_webpage.JPG" width="227" height="304" alt="Photo" style="width: 227px; height: auto;" />
-					<br/>
-					<font face="arial" size="2" color="#000000">
-						<p>
-							<b>jrudgele@ur.rochester.edu</b>
-						</p>
-					</font>
-					<font face="arial" size="3">
-						<p>	PhD Candidate <br/>
-						University of Rochester <br/>
-						Rochester, NY<br/>
-						</p>	
-					</font>
+    <table width="100%">
+        <!-- Title -->
+        <tr>
+            <td rowspan="4" width="10%"></td>
+            <td colspan="3" valign="top">
+                <br/>
+                <span>Joao Rudge Leite</span>
+                <br/>
+            </td>
+            <td rowspan="4" width="10%"></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <hr color="#0F4C81"/>
+            </td>
+        </tr>
+        <!-- About -->
+        <tr>
+            <td class="column" width="200" valign="top">
+                <img src="https://jrudgele.github.io/Photo_webpage.JPG" width="227" height="304" alt="Photo" style="width: 227px; height: auto;" />
+                <br/>
+                <font face="arial" size="2" color="#000000">
+                    <p>
+                        <b>jrudgele@ur.rochester.edu</b>
+                    </p>
+                </font>
+                <font face="arial" size="3">
+                    <p>    PhD Candidate <br/>
+                    University of Rochester <br/>
+                    Rochester, NY<br/>
+                    </p>    
+                </font>
+            </td>
+            <td class="column" width="20"></td>
+            <td class="column" valign="top">
+                <font face="arial" color="#000000" size="3">
+                    <div class="about">
+                        <font size="4" color="#0F4C81" style="font-weight: bold;" >About</font>
+                        <font size="2.5" color="#000000">
+                            <p>I am an Economics PhD Candidate at the University of Rochester. I will be on the Job Market in 2024-2025.</p>
+                            <p>My research interests are in Macroeconomics, Banking, and International Finance.</p>
+                        </font>
+                    </div>
+                    <br/>
+                    <hr color="#0F4C81"/>
+                    <br/>
+                    <font size="4" style="font-weight: bold;" color="#0F4C81">Job Market Paper</font>
+                    <font size="2.5" color="#000000">
+                        <p>
+                            <a href="https://jrudgele.github.io/Heterogeneous_Banks.pdf" style="color: #0F4C81; font-weight: bold;" target="_blank">"Heterogeneous Banks and Transmission of Monetary Policy"</a>,
+                            (JMP) Draft Updated Frequently.
+                            <a href="#/" onclick="visib('het_banks')" style="color: #0F4C81; font-weight: bold;" text-decoration: none> [Abstract]</a>
+                        </p>
+                        <div id="het_banks" style="display: none;">
+                            <p align="justify" style="margin-left: 25px;">
+                                This paper analyzes the importance of heterogeneity in banks' funding on the transmission of monetary policy shocks...
+                            </p>
+                        </div>
+                    </font>
+                </font>
+            </td>
+        </tr>
+    </table>
 
-				</td>
-				<td class="column" width="20"></td>
-				<td class="column"  valign="top">
-					<font face="arial" color="#000000" size="3">
-						<!-- About -->
-						<div class="about">
-						<font size="4" color="#0F4C81" style="font-weight: bold;" >About</font>
-						<font size="2.5" color="#000000">
-							<p>I am an Economics PhD Candidate at the University of Rochester. I will be on the Job Market in 2024-2025.</p>
-							<p>My research interests are in Macroeconomics, Banking, and International Finance.</p>
-						</font>
-						</div>
-						
-						</br>
-						<hr color="#0F4C81"/>
-						<br/>
-						<!-- Job Market Paper -->
-						<font size="4" style="font-weight: bold;" color="#0F4C81">Job Market Paper</font>
-						<font size="2.5" color="#000000">
-
-							<p>
-								<a href ="https://jrudgele.github.io/Heterogeneous_Banks.pdf" style="color: #0F4C81; style="font-weight: bold;" text-decoration: none" target="_blank">"Heterogeneous Banks and Transmission of Monetary Policy"</a>,
-								(JMP) Draft Updated Frequently.
-								<a href="#/" onclick="visib('het_banks')" style="color: #0F4C81; style="font-weight: bold;" text-decoration: none" >[Abstract]</a>
-							</p>
-							
-							<div id="het_banks" style="display: none;">
-							<p align="justify" style="margin-left: 25px;">
-								This paper analyzes the importance of heterogeneity in banks' funding on the transmission of monetary policy shocks.
-								Banks fund themselves with liabilities that differ in their maturity structure.
-								Empirically, I find that banks whose liabilities have longer maturity are less responsive to monetary shocks.
-								I interpret this finding using a heterogeneous-banks macroeconomic model with endogenous default and funding choices.
-								The maturity choice arises from banks' inability to freely raise debt, either by limited commitment or regulation.
-								Long-term liabilities enable these banks to avoid states with low liquidity, but at a higher funding cost.
-								Using this framework, I assess the aggregate implications of monetary shocks and provide quantitative evidence that the effect of monetary policy depends on the distribution of banks' funding structure, which varies over time and depends on the interest level.
-							</p>
-							</div>
-							
-				</td>
-			</tr>
-		</table>
-	</body>
+</body>
 </html>
+
