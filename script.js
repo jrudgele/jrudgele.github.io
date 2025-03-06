@@ -18,14 +18,13 @@ function visib(id) {
 // Highlight Active Navbar Link
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
-    let currentPath = window.location.pathname.split("/").pop();
-    
-    if (currentPath === "" || currentPath === "index") {
-        currentPath = "index"; // Default to index if empty
-    }
+    let currentPath = window.location.pathname.split("/").pop()|| "index";
+
+    // Ensure the script works for URLs without ".html"
+    currentPath = currentPath.replace(".html", "");
 
     navLinks.forEach(link => {
-        const linkPath = link.getAttribute("href");
+        let linkPath = link.getAttribute("href").replace(".html", "");
         if (linkPath === currentPath) {
             link.classList.add("active");
         }
