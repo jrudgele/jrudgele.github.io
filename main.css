@@ -138,7 +138,7 @@ p {
         /* Display menu in mobile view */
         .navbar.responsive .menu a {
             display: block;
-            text-align: left; /* Align text to the left */
+            text-align: center; /* Align text to the left */
         }
     }
 
