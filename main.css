@@ -136,12 +136,9 @@ p {
         }
 
         /* Display menu in mobile view */
+       /* Display menu in mobile view */
         .navbar.responsive .menu a {
-	position: absolute;
-    	top: 60px; /* Pushes menu below navbar */
-    	left: 0;
-    	width: 100%;
-        text-align: center; /* Align text to the left */
+            display: block;
+            text-align: left; /* Align text to the left */
         }
     }
-
