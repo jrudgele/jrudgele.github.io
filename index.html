@@ -64,6 +64,12 @@
     cursor: pointer;
 }
 
+/* Active section */   
+.navbar a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #0F4C81; /* Optional visual cue */
+}
+
 /* Responsive design */
 @media screen and (max-width: 600px) {
     .menu {
@@ -126,17 +132,32 @@
 			  }
 			}
 </script>
-    
+	
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-link");
+    const currentPath = window.location.pathname.split("/").pop(); // Get current page filename
+
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute("href").split("/").pop(); // Extract filename from href
+
+        if (linkPath === currentPath || (currentPath === "" && linkPath === "index")) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+	
 </head>
 <body>
 
     <!-- Navigation Bar -->
    <div class="navbar" id="myNavbar">
-    <div class="menu">
-        <a href="index">Home</a>
-        <a href="research">Research</a>
-        <a href="https://jrudgele.github.io/Joao_CV.pdf">CV</a>
-    </div>
+		<div class="menu">
+		    <a href="index" class="nav-link">Home</a>
+		    <a href="research" class="nav-link">Research</a>
+		    <a href="https://jrudgele.github.io/Joao_CV.pdf" class="nav-link">CV</a>
+		</div>
     <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
 </div>
     <table width="100%">
