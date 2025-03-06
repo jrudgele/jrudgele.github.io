@@ -137,7 +137,6 @@ p {
 
         /* Display menu in mobile view */
         .navbar.responsive .menu a {
-        display: block;
 	position: absolute;
     	top: 60px; /* Pushes menu below navbar */
     	left: 0;
