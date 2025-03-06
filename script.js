@@ -18,13 +18,19 @@ function visib(id) {
 // Highlight Active Navbar Link
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
-    let currentPath = window.location.pathname.split("/").pop()|| "index";
 
-    // Ensure the script works for URLs without ".html"
+    // Get the current path, default to 'index' if empty
+    let currentPath = window.location.pathname.split("/").pop() || "index";
+
+    // Remove '.html' to handle cases where it's omitted
     currentPath = currentPath.replace(".html", "");
 
     navLinks.forEach(link => {
         let linkPath = link.getAttribute("href").replace(".html", "");
+
+        // Debugging: Print values to check them
+        console.log(`Checking: ${linkPath} === ${currentPath}`);
+
         if (linkPath === currentPath) {
             link.classList.add("active");
         }
