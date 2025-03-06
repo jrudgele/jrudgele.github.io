@@ -1,67 +1,105 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #0f4c81;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-
-main {
-    padding: 20px 0;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #0f4c81;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-}
-
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Standard body styling */
+    body {
+        background-color: #ffffff;
+        color: #0F4C81;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+/* CSS styles for mobile devices */
+@media screen and (max-width: 600px) {
+		    .column {
+		        width: 100% !important;
+		        display: block !important;
+			text-align: center; /* Center content */
+		    }
+		    img {
+		        max-width: 80%; /* Prevent overflow */
+		        height: auto;
+		    }
+		}
+			.about {
+				margin-top: 40px; /* Adjust the value based on your preference */
+			}
+		
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-nav ul li {
-    margin: 0;
+/* Menu container */
+.menu {
+    display: flex;
+    gap: 15px;
 }
 
-nav ul li a {
-    color: #fff;
+/* Style for navbar links */
+.navbar a {
+    color: #0F4C81;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 17px;
+    padding: 14px 16px;
 }
+
+/* Hamburger icon */
+.navbar .icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Active section */   
+.navbar a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #0F4C81; /* Optional visual cue */
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none; /* Hide menu items by default */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar.responsive .menu {
+        display: flex; /* Show menu items when active */
+    }
+
+    .navbar .icon {
+        display: block;
+        background: none;
+        border: none;
+    }
+}
+
+    /* Mobile view styling */
+    @media screen and (max-width: 600px) {
+        .navbar a.icon {
+            display: block;
+        }
+
+        /* Initially hide all navbar links in mobile view */
+        .navbar a {
+            display: none;
+        }
+
+        /* Display the links when navbar is in responsive mode */
+        .navbar.responsive a {
+            display: block;
+            width: 100%;
+        }
+
+        /* Display menu in mobile view */
+        .navbar.responsive .menu a {
+            display: block;
+            text-align: left; /* Align text to the left */
+        }
+    }
