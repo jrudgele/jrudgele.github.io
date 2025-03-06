@@ -93,7 +93,7 @@ p {
 }
 
 /* Active section */   
-.navbar a.active {
+.nav-link.active {
     font-weight: bold;
     border-bottom: 2px solid #0F4C81; /* Optional visual cue */
 }
