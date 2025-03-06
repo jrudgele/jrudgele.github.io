@@ -136,12 +136,15 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
-    const currentPath = window.location.pathname.split("/").pop(); // Get current page filename
+    let currentPath = window.location.pathname.split("/").pop();
+    
+    if (currentPath === "" || currentPath === "index") {
+        currentPath = "index"; // Default to index if empty
+    }
 
     navLinks.forEach(link => {
-        const linkPath = link.getAttribute("href").split("/").pop(); // Extract filename from href
-
-        if (linkPath === currentPath || (currentPath === "" && linkPath === "index")) {
+        const linkPath = link.getAttribute("href");
+        if (linkPath === currentPath) {
             link.classList.add("active");
         }
     });
