@@ -196,3 +196,21 @@ h2 {
     color: #0F4C81;
     font-weight: bold;
 }
+
+/* 📱 Mobile View: Stack Photo & Text */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements */
+        align-items: center; /* Center the content */
+        text-align: center;
+    }
+
+    .photo-container, 
+    .about-container {
+        max-width: 100%; /* Full width */
+    }
+
+    .about-container {
+        padding: 0 20px; /* Add some spacing */
+    }
+}
