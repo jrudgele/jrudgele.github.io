@@ -142,29 +142,51 @@ p {
             text-align: left; /* Align text to the left */
         }
     }
-/* Display photo in one side */
+
+/* Display Container*/
+/* Centered Title */
+.title-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0F4C81;
+}
+
+.title-container hr {
+    border: 2px solid #0F4C81;
+    width: 80%;
+    margin: 5px auto 30px;
+}
+
+/* Flexbox Layout */
 .container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px; /* Space between sections */
+    gap: 40px;
     max-width: 900px;
     margin: auto;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
 }
 
+/* Photo Section */
 .photo-container {
     flex: 1;
-    max-width: 250px; /* Adjust size */
+    max-width: 250px;
     text-align: center;
 }
 
 .photo-container img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Optional: for rounded corners */
+    border-radius: 10px;
 }
 
+/* About Section */
 .about-container {
     flex: 2;
     max-width: 600px;
