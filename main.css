@@ -142,3 +142,35 @@ p {
             text-align: left; /* Align text to the left */
         }
     }
+/* Display photo in one side */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; /* Space between sections */
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.photo-container {
+    flex: 1;
+    max-width: 250px; /* Adjust size */
+    text-align: center;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.about-container {
+    flex: 2;
+    max-width: 600px;
+}
+
+h2 {
+    color: #0F4C81;
+    font-weight: bold;
+}
