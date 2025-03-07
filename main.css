@@ -158,8 +158,9 @@ p {
 
 .title-container hr {
     border: 2px solid #0F4C81;
-    width: 80%;
-    margin: 5px auto 30px;
+    width: fit-content; /* Ensures the line only covers the text */
+    min-width: 50%; /* Ensures visibility while keeping it proportional */	
+    margin: 0 auto 30px;
 }
 
 /* Flexbox Layout */
