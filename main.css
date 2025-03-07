@@ -143,27 +143,25 @@ p {
         }
     }
 
-/* Title Container */
+/* Title Styling */
 .title-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Center everything */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title-content {
+    display: inline-block;
     text-align: center;
 }
 
-/* Name Formatting */
-.title-name {
-    font-size: 8; /* Adjust size as needed */
-    font-weight: bold;
-    color: #0F4C81;
-}
-
-/* Line Below Name */
-.title-line {
+.title-content hr {
     border: 2px solid #0F4C81;
-    width: fit-content;
-    min-width: 50%; /* Ensures it is visible but not too short */
-    margin-top: 5px;
+    width: 100%;
+    margin: 5px auto 30px;
 }
 
 /* Flexbox Layout */
