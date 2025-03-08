@@ -168,7 +168,7 @@ p {
 /* Mobile Adjustment (Width <= 768px) */
 @media screen and (max-width: 768px) {
     .title-content hr {
-        width: 50%; /* Reduced width for mobile */
+        width: 80%; /* Reduced width for mobile */
     }
 }
 
