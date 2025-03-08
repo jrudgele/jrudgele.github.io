@@ -35,6 +35,11 @@ p {
     height: auto; /* Keeps the height proportional to the width */
 }
 
+/* Link Styling for Pantone Classic Blue and Underlined */
+a {
+    text-decoration: underline; /* Underline the text */
+    color: #0F4C81; /* Pantone Classic Blue */
+}
 
     /* Standard body styling */
     body {
