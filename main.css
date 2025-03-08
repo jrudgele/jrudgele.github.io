@@ -165,12 +165,7 @@ p {
     margin: 5px auto 30px;
 }
 
-/* Mobile Adjustment (Width <= 768px) */
-@media screen and (max-width: 768px) {
-    .title-content hr {
-        width: 60%; /* Reduce width on mobile screens */
-    }
-}
+
 /* Flexbox Layout */
 .container {
     display: flex;
