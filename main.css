@@ -165,6 +165,12 @@ p {
     margin: 5px auto 30px;
 }
 
+/* Mobile Adjustment (Width <= 768px) */
+@media screen and (max-width: 768px) {
+    .title-content hr {
+        width: 80%; /* Reduced width for mobile */
+    }
+}
 
 /* Flexbox Layout */
 .container {
