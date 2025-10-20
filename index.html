@@ -3,70 +3,86 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joao Rudge Leite</title>
-   <link rel="stylesheet" href="main.css">
+    <meta name="description" content="João Rudge Leite is a Visiting Assistant Professor of Economics at the University of Arkansas. His research focuses on macroeconomics, banking, and international finance.">
     <meta name="google-site-verification" content="V0t5ypDAlo7KNVjGEvB9UZMBwe-qi1gKn1oF9N4A50M" />
-    <link rel="icon" href="https://jrudgele.github.io/Initial_Icon.ICO"/>
- 
 
-<script src="script.js"></script>
-	
+    <title>João Rudge Leite</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="https://jrudgele.github.io/Initial_Icon.ICO">
+
+    <!-- Open Graph / Social preview -->
+    <meta property="og:title" content="João Rudge Leite">
+    <meta property="og:description" content="Visiting Assistant Professor of Economics at the University of Arkansas. Research in Macroeconomics, Banking, and International Finance.">
+    <meta property="og:image" content="https://jrudgele.github.io/Photo_webpage.JPG">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jrudgele.github.io">
+
+    <script src="script.js"></script>
 </head>
+
 <body>
 
     <!-- Navigation Bar -->
-   <div class="navbar" id="myNavbar">
-		<div class="menu">
-		    <a href="index" class="nav-link">Home</a>
-		    <a href="research" class="nav-link">Research</a>
-		    <a href="teaching" class="nav-link">Teaching</a>
-		    <a href="https://jrudgele.github.io/Joao_CV.pdf" class="nav-link">CV</a>
-		</div>
-    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
-</div>
+    <nav class="navbar" id="myNavbar">
+        <div class="menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="research.html" class="nav-link">Research</a>
+            <a href="teaching.html" class="nav-link">Teaching</a>
+            <a href="https://jrudgele.github.io/Joao_CV.pdf" class="nav-link" target="_blank" rel="noopener">CV</a>
+            <a href="mailto:jrudgeleite@walton.uark.edu" class="nav-link">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
 
-<div class="title-container">
-    <div class="title-content">
-        <font size="8" style="font-weight: bold;" color="#0F4C81">João Rudge Leite</font>
-        <hr />
-    </div>
-</div>
-	
-<div class="container">
-    <!-- Photo Section -->
-    <div class="photo-container">
-        <img src="https://jrudgele.github.io/Photo_webpage.JPG" width="227" height="304" alt="Photo" />
-        <p><b><a href="mailto:jrudgele@ur.rochester.edu">jrudgele@ur.rochester.edu</a></b></p>
-        <p>PhD Candidate <br/> University of Rochester <br/> Rochester, NY</p>
-    </div>
+    <!-- Title Section -->
+    <header class="title-container">
+        <div class="title-content">
+            <h1 style="color:#0F4C81;">João Rudge Leite</h1>
+            <p style="font-size:1.2em; color:#333;">Visiting Assistant Professor · University of Arkansas</p>
+            <hr>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Photo Section -->
+        <section class="photo-container">
+            <img src="https://jrudgele.github.io/Photo_webpage.JPG" width="227" height="304" alt="Portrait of João Rudge Leite">
+            <p><b><a href="mailto:jrudgeleite@walton.uark.edu">jrudgeleite@walton.uark.edu</a></b></p>
+            <p>Visiting Assistant Professor<br>University of Arkansas<br>Fayetteville, AR</p>
+        </section>
 
-    <!-- About Section -->
-    <div class="about-container">
-        <h2>About</h2>
-        <p>I am an Economics PhD Candidate at the University of Rochester. I will be on the Job Market in 2024-2025.</p>
-        <p>My research interests are in Macroeconomics, Banking, and International Finance.</p>
+        <!-- About Section -->
+        <section class="about-container">
+            <h2>About</h2>
+            <p>I am a Visiting Assistant Professor in the Department of Economics at the University of Arkansas. I received my Ph.D. from the University of Rochester. I will be on the job market in 2025–2026.</p>
+            <p>My research interests are in Macroeconomics, Banking, and International Finance.</p>
 
-        <hr />
+            <hr>
 
-        <h2>Job Market Paper</h2>
-        <p>
-            <a href="https://jrudgele.github.io/Heterogeneous_Banks.pdf" target="_blank">
-                Heterogeneous Banks and Transmission of Monetary Policy
-            </a>
-        </p>
-        <p align="justify">
-             This paper analyzes the importance of heterogeneity in banks' funding on the transmission of monetary policy shocks.
-		Banks fund themselves with liabilities that differ in their maturity structure.
+            <h2>Job Market Paper</h2>
+            <p><em>A Model of Bank Failures: Funding Frictions and the Dynamics Before Collapse</em></p>
+
+            <!-- Hidden hyperlink and abstract -->
+            <!--
+            <p>
+                <a href="https://jrudgele.github.io/Heterogeneous_Banks.pdf" target="_blank" rel="noopener">
+                    A Model of Bank Failures: Funding Frictions and the Dynamics Before Collapse
+                </a>
+            </p>
+
+            <p align="justify">
+                This paper analyzes the importance of heterogeneity in banks' funding on the transmission of monetary policy shocks.
+                Banks fund themselves with liabilities that differ in their maturity structure.
                 Empirically, I find that banks whose liabilities have longer maturity are less responsive to monetary shocks.
                 I interpret this finding using a heterogeneous-banks macroeconomic model with endogenous default and funding choices.
                 The maturity choice arises from banks' inability to freely raise debt, either by limited commitment or regulation.
                 Long-term liabilities enable these banks to avoid states with low liquidity, but at a higher funding cost.
                 Using this framework, I assess the aggregate implications of monetary shocks and provide quantitative evidence that the effect of monetary policy depends on the distribution of banks' funding structure, which varies over time and depends on the interest level.
-
-        </p>
-    </div>
-</div>
-
+            </p>
+            -->
+        </section>
+    </main>
 
 </body>
 </html>
