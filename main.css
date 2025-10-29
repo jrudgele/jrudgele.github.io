@@ -44,13 +44,12 @@
 /* Responsive adjustment */
 @media screen and (max-width: 600px) {
     .navbar-logo {
-        height: 35px;
-        margin: 0 auto;
+        height: 30px;
+        margin: 0 auto 10px auto;
     }
 
     .logo-container {
         justify-content: center;
-        margin-bottom: 10px;
     }
 }
 
