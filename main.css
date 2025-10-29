@@ -27,6 +27,32 @@
     font-family: Arial, sans-serif;
 }
 
+
+/* Navbar Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 45px;           /* Adjust this for size */
+    width: auto;
+    margin-right: 20px;     /* Space between logo and menu */
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 600px) {
+    .navbar-logo {
+        height: 35px;
+        margin: 0 auto;
+    }
+
+    .logo-container {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
 /* Increase font size slightly for the rest of the content */
 body {
     font-size: 16px; /* Default for the body text */
