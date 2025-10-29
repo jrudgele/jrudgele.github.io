@@ -4,22 +4,7 @@
     padding: 20px;
 }
 
-/* Header Logo Styling */
-.header-logo {
-  width: 250px;          /* adjust as needed */
-  height: auto;
-  margin-bottom: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-/* Make it responsive for mobile */
-@media screen and (max-width: 600px) {
-  .header-logo {
-    width: 60%;          /* scales well on mobile */
-  }
-}
 /* Larger title */
 .classic-blue-background span {
     font-size: 40px;
@@ -28,30 +13,6 @@
 }
 
 
-/* Navbar Logo */
-.navbar-logo {
-    height: 40px;       /* shrink this value until it looks balanced */
-    width: auto;        /* keeps proportions */
-    margin-right: 15px; /* spacing from the menu */
-    vertical-align: middle;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center; /* vertically center logo with menu items */
-}
-
-/* Responsive adjustment */
-@media screen and (max-width: 600px) {
-    .navbar-logo {
-        height: 30px;
-        margin: 0 auto 10px auto;
-    }
-
-    .logo-container {
-        justify-content: center;
-    }
-}
 
 /* Increase font size slightly for the rest of the content */
 body {
@@ -107,88 +68,107 @@ a {
 				margin-top: 40px; /* Adjust the value based on your preference */
 			}
 		
-/* Navbar styles */
+/* ============================= */
+/*         NAVIGATION BAR        */
+/* ============================= */
+
 .navbar {
-    background-color: #ffffff;
-    overflow: hidden;
-    position: relative;
+    background-color: #ffffff; 
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    justify-content: flex-start;
+    padding: 8px 24px;
+    gap: 10px; /* space between logo and links */
+    border-bottom: 1px solid #e0e0e0;
 }
 
-/* Menu container */
+/* LOGO CONTAINER */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* adjust spacing */
+}
+
+/* LOGO IMAGE */
+.navbar-logo {
+    height: 36px; /* adjust for proportion */
+    width: auto;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+/* MENU LINKS */
 .menu {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 12px; /* space between menu items */
 }
 
-/* Style for navbar links */
+/* INDIVIDUAL LINKS */
 .navbar a {
     color: #0F4C81;
     text-decoration: none;
     font-size: 17px;
-    padding: 14px 16px;
+    padding: 8px 6px;
+    font-family: Arial, sans-serif;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
 }
 
-/* Hamburger icon */
-.navbar .icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-/* Active section */   
+/* ACTIVE LINK + HOVER EFFECT */
+.navbar a:hover,
 .nav-link.active {
     font-weight: bold;
-    border-bottom: 2px solid #0F4C81; /* Optional visual cue */
+    border-bottom: 2px solid #0F4C81;
+    color: #09315c; /* slightly darker blue */
 }
 
-/* Responsive design */
-@media screen and (max-width: 600px) {
+/* HAMBURGER ICON FOR MOBILE */
+.navbar .icon {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #0F4C81;
+}
+
+/* ============================= */
+/*      RESPONSIVE BEHAVIOR      */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 20px;
+    }
+
     .menu {
-        display: none; /* Hide menu items by default */
+        display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
+        gap: 8px;
     }
 
     .navbar.responsive .menu {
-        display: flex; /* Show menu items when active */
+        display: flex;
     }
 
     .navbar .icon {
         display: block;
-        background: none;
-        border: none;
+        margin-top: 8px;
+    }
+
+    .navbar-logo {
+        height: 32px;
+        margin-bottom: 8px;
     }
 }
 
-    /* Mobile view styling */
-    @media screen and (max-width: 600px) {
-        .navbar a.icon {
-            display: block;
-        }
-
-        /* Initially hide all navbar links in mobile view */
-        .navbar a {
-            display: none;
-        }
-
-        /* Display the links when navbar is in responsive mode */
-        .navbar.responsive a {
-            display: block;
-            width: 100%;
-        }
-
-        /* Display menu in mobile view */
-       /* Display menu in mobile view */
-        .navbar.responsive .menu a {
-            display: block;
-            text-align: left; /* Align text to the left */
-        }
-    }
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
 /* Title Styling */
 .title-container {
