@@ -29,15 +29,16 @@
 
 
 /* Navbar Logo */
-.logo-container {
-    display: flex;
-    align-items: center;
+.navbar-logo {
+    height: 40px;       /* shrink this value until it looks balanced */
+    width: auto;        /* keeps proportions */
+    margin-right: 15px; /* spacing from the menu */
+    vertical-align: middle;
 }
 
-.navbar-logo {
-    height: 45px;           /* Adjust this for size */
-    width: auto;
-    margin-right: 20px;     /* Space between logo and menu */
+.logo-container {
+    display: flex;
+    align-items: center; /* vertically center logo with menu items */
 }
 
 /* Responsive adjustment */
