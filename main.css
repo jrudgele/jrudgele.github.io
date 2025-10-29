@@ -4,7 +4,22 @@
     padding: 20px;
 }
 
+/* Header Logo Styling */
+.header-logo {
+  width: 250px;          /* adjust as needed */
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+/* Make it responsive for mobile */
+@media screen and (max-width: 600px) {
+  .header-logo {
+    width: 60%;          /* scales well on mobile */
+  }
+}
 /* Larger title */
 .classic-blue-background span {
     font-size: 40px;
