@@ -175,26 +175,34 @@ a {
 /* ============================= */
 
 @media screen and (max-width: 768px) {
-    /* Stack burger and logo */
+    /* Stack main structure */
     .navbar {
         flex-direction: column;
         align-items: stretch;
         padding: 8px 20px;
     }
 
-    /* Top row: burger left, logo right */
-    .logo-container {
+    /* New top row: burger + logo side by side */
+    .navbar-top {
         display: flex;
+        justify-content: flex-start; /* keeps both on left */
         align-items: center;
+        width: 100%;
     }
 
+    /* Burger icon */
     .icon {
         display: block;
         font-size: 28px;
         cursor: pointer;
         color: #0F4C81;
-        margin-right: 12px;
-        order: -1; /* ensures burger appears before logo */
+        margin-right: 10px;
+    }
+
+    /* Logo */
+    .navbar-logo {
+        height: 32px;
+        width: auto;
     }
 
     /* Menu hidden until toggle */
@@ -210,11 +218,8 @@ a {
     .navbar.responsive .menu {
         display: flex;
     }
+}
 
-    /* Slightly smaller logo for mobile */
-    .navbar-logo {
-        height: 32px;
-    }
 /* Title Styling */
 .title-container {
     display: flex;
