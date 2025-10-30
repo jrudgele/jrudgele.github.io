@@ -1,9 +1,12 @@
+/* ============================= */
+/*         GLOBAL STYLING        */
+/* ============================= */
+
 .classic-blue-background {
     background-color: #0F4C81; /* Pantone Classic Blue */
-    color: "#F9F9F9";
+    color: #F9F9F9;
     padding: 20px;
 }
-
 
 /* Larger title */
 .classic-blue-background span {
@@ -12,62 +15,55 @@
     font-family: Arial, sans-serif;
 }
 
-
-
-/* Increase font size slightly for the rest of the content */
+/* Body */
 body {
-    font-size: 16px; /* Default for the body text */
+    background-color: #ffffff;
+    color: #0F4C81;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
-.column {
-    font-size: 16px; /* For text in columns */
-}
-
-/* Larger headings */
-.about font[size="4"] {
-    font-size: 24px; /* Larger font for "About" heading */
-}
-
+/* Paragraphs */
 p {
-    font-size: 16px; /* Slightly larger for all paragraphs */
-     color:	#4B4F54; /* Pantone Phantom */
+    font-size: 16px;
+    color: #4B4F54; /* Pantone Phantom */
 }
 
-    img {
-    max-width: 100%; /* Ensures the image doesn’t go beyond the container */
-    height: auto; /* Keeps the height proportional to the width */
-}
-
-/* Link Styling for Pantone Classic Blue and Underlined */
+/* Links */
 a {
-    text-decoration: underline; /* Underline the text */
-    color: #0F4C81; /* Pantone Classic Blue */
+    text-decoration: underline;
+    color: #0F4C81;
 }
 
-    /* Standard body styling */
-    body {
-        background-color: #ffffff;
-        color: #0F4C81;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-/* CSS styles for mobile devices */
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Columns */
+.column {
+    font-size: 16px;
+}
+
+/* Mobile image scaling */
 @media screen and (max-width: 600px) {
-		    .column {
-		        width: 100% !important;
-		        display: block !important;
-			text-align: center; /* Center content */
-		    }
-		    img {
-		        max-width: 80%; /* Prevent overflow */
-		        height: auto;
-		    }
-		}
-			.about {
-				margin-top: 40px; /* Adjust the value based on your preference */
-			}
-		
+    .column {
+        width: 100% !important;
+        display: block !important;
+        text-align: center;
+    }
+    img {
+        max-width: 80%;
+    }
+}
+
+.about {
+    margin-top: 40px;
+}
+
 /* ============================= */
 /*         NAVIGATION BAR        */
 /* ============================= */
@@ -89,7 +85,6 @@ a {
 .logo-container {
     display: flex;
     align-items: center;
-    margin-right: 10px;
 }
 
 /* LOGO IMAGE */
@@ -97,7 +92,6 @@ a {
     height: 36px;
     width: auto;
     vertical-align: middle;
-    margin-right: 12px;
 }
 
 /* MENU LINKS */
@@ -107,7 +101,7 @@ a {
     gap: 12px;
 }
 
-/* INDIVIDUAL LINKS */
+/* NAVBAR LINKS */
 .navbar a {
     color: #0F4C81;
     text-decoration: none;
@@ -117,7 +111,7 @@ a {
     transition: color 0.2s ease, border-bottom 0.2s ease;
 }
 
-/* ACTIVE LINK + HOVER EFFECT */
+/* ACTIVE + HOVER STATES */
 .navbar a:hover,
 .nav-link.active {
     font-weight: bold;
@@ -125,10 +119,10 @@ a {
     color: #09315c;
 }
 
-/* HAMBURGER ICON (hidden on desktop) */
-.navbar .icon {
+/* BURGER ICON (hidden on desktop) */
+.icon {
     display: none;
-    font-size: 32px;
+    font-size: 28px;
     cursor: pointer;
     color: #0F4C81;
 }
@@ -137,13 +131,14 @@ a {
 /*        PHONE VIEW ONLY        */
 /* ============================= */
 @media screen and (max-width: 768px) {
+    /* Stack structure for mobile */
     .navbar {
         flex-direction: column;
         align-items: stretch;
         padding: 8px 20px;
     }
 
-    /* Top row: burger + logo side by side */
+    /* Row with burger + logo */
     .navbar-top {
         display: flex;
         justify-content: flex-start;
@@ -151,7 +146,7 @@ a {
         width: 100%;
     }
 
-    /* Burger icon */
+    /* Show burger icon */
     .icon {
         display: block;
         font-size: 28px;
@@ -163,9 +158,10 @@ a {
     /* Smaller logo */
     .navbar-logo {
         height: 32px;
+        margin: 0;
     }
 
-    /* Menu hidden until toggle */
+    /* Hide menu until toggled */
     .menu {
         display: none;
         flex-direction: column;
@@ -174,13 +170,23 @@ a {
         gap: 10px;
     }
 
-    /* Show menu when toggled */
+    /* Show menu on toggle */
     .navbar.responsive .menu {
         display: flex;
+        animation: slideDown 0.3s ease;
     }
 }
 
-/* Title Styling */
+/* Smooth slide animation for dropdown */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================= */
+/*         TITLE SECTION         */
+/* ============================= */
+
 .title-container {
     display: flex;
     justify-content: center;
@@ -193,7 +199,7 @@ a {
 .title-content {
     display: inline-block;
     text-align: center;
-    width: auto; /* Prevent stretching */
+    width: auto;
 }
 
 .title-content hr {
@@ -202,14 +208,17 @@ a {
     margin: 5px auto 30px;
 }
 
-/* Mobile Adjustment (Width <= 768px) */
+/* Title responsive */
 @media screen and (max-width: 768px) {
     .title-content hr {
-        width: 80%; /* Reduced width for mobile */
+        width: 80%;
     }
 }
 
-/* Flexbox Layout */
+/* ============================= */
+/*         MAIN LAYOUT           */
+/* ============================= */
+
 .container {
     display: flex;
     justify-content: center;
@@ -220,7 +229,7 @@ a {
     flex-wrap: wrap;
 }
 
-/* Photo Section */
+/* PHOTO SECTION */
 .photo-container {
     flex: 1;
     max-width: 250px;
@@ -233,43 +242,39 @@ a {
     border-radius: 10px;
 }
 
-/* About Section */
+/* ABOUT SECTION */
 .about-container {
     flex: 2;
     max-width: 600px;
 }
 
+/* HEADINGS */
 h2 {
     color: #0F4C81;
     font-weight: bold;
 }
 
-/* Research Section */
+/* RESEARCH SECTION */
 .research-container {
     flex: 2;
     max-width: 1200px;
 }
 
-
-/* 📱 Mobile View: Stack Photo & Text */
+/* 📱 MOBILE: stack sections */
 @media screen and (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack elements */
-        align-items: center; /* Center the content */
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
     .photo-container, 
     .about-container, 
     .research-container {
-        max-width: 100%; /* Full width */
+        max-width: 100%;
     }
 
-    .about-container {
-        padding: 0 20px; /* Add some spacing */
-    }
-
-    .research-container {
-        padding: 0 20px; /* Add some spacing */
+    .about-container, .research-container {
+        padding: 0 20px;
     }
 }
