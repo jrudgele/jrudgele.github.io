@@ -170,6 +170,51 @@ a {
     z-index: 1000;
 }
 
+/* ============================= */
+/*        PHONE VIEW ONLY        */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+    /* Stack burger and logo */
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px 20px;
+    }
+
+    /* Top row: burger left, logo right */
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: #0F4C81;
+        margin-right: 12px;
+        order: -1; /* ensures burger appears before logo */
+    }
+
+    /* Menu hidden until toggle */
+    .menu {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 40px;
+        gap: 10px;
+    }
+
+    /* Show menu when toggled */
+    .navbar.responsive .menu {
+        display: flex;
+    }
+
+    /* Slightly smaller logo for mobile */
+    .navbar-logo {
+        height: 32px;
+    }
 /* Title Styling */
 .title-container {
     display: flex;
