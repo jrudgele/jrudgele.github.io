@@ -130,38 +130,40 @@ img {
 /* ============================= */
 /*        PHONE VIEW ONLY        */
 /* ============================= */
+
 @media screen and (max-width: 768px) {
-    /* Stack structure for mobile */
+
+    /* Navbar container */
     .navbar {
         flex-direction: column;
         align-items: stretch;
         padding: 8px 20px;
     }
 
-    /* Row with burger + logo */
+    /* Top row: burger + logo side by side */
     .navbar-top {
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-start; /* burger and logo side by side */
         align-items: center;
         width: 100%;
     }
 
-    /* Show burger icon */
+    /* Burger icon */
     .icon {
-        display: block;
+        display: block !important; /* force show */
         font-size: 28px;
         cursor: pointer;
         color: #0F4C81;
         margin-right: 10px;
     }
 
-    /* Smaller logo */
+    /* Logo */
     .navbar-logo {
         height: 32px;
-        margin: 0;
+        width: auto;
     }
 
-    /* Hide menu until toggled */
+    /* Hide menu by default */
     .menu {
         display: none;
         flex-direction: column;
@@ -170,17 +172,10 @@ img {
         gap: 10px;
     }
 
-    /* Show menu on toggle */
+    /* Show menu when toggled */
     .navbar.responsive .menu {
         display: flex;
-        animation: slideDown 0.3s ease;
     }
-}
-
-/* Smooth slide animation for dropdown */
-@keyframes slideDown {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
 }
 
 /* ============================= */
