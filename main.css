@@ -326,3 +326,8 @@ a {
 .title-content h1 {
     color: var(--main-blue);
 }
+
+.about-container p {
+    text-align: justify;
+    line-height: 1.6;
+}
