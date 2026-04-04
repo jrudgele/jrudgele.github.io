@@ -274,118 +274,34 @@ h2 {
     }
 }
 
-.profile {
-    display: flex;
-    gap: 40px;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-    align-items: flex-start;
+/* ===== COLORS ===== */
+:root {
+    --main-blue: #0F4C81;   /* Pantone Classic Blue */
+    --text-gray: #4B4F54;   /* Phantom gray */
 }
 
-.profile-photo img {
-    width: 220px;
-    border-radius: 6px;
+/* ===== GENERAL ===== */
+body {
+    color: var(--text-gray);
+    font-family: Arial, sans-serif;
 }
 
-.profile-photo address {
-    margin-top: 10px;
-    font-style: normal;
-    font-size: 14px;
-}
-
-.profile-text h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
-    color: #9E1B32;
-}
-
-.subtitle {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.intro {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.links a {
-    color: #9E1B32;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.links a:hover {
-    text-decoration: underline;
-}
-
-/* About section */
-.about {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-/* ===== MAIN LAYOUT ===== */
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Centered name */
-.name-header {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
+/* ===== NAME ===== */
 .name-header h1 {
     font-size: 36px;
-    color: #9E1B32; /* your red */
+    color: var(--main-blue);
     margin-bottom: 5px;
 }
 
+/* Subtitle */
 .subtitle {
     font-size: 16px;
     color: #555;
 }
 
-/* Two-column layout */
-.profile {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-}
-
-/* Left column */
-.profile-photo img {
-    width: 220px;
-    border-radius: 6px;
-}
-
-.profile-photo address {
-    margin-top: 10px;
-    font-style: normal;
-    font-size: 14px;
-}
-
-/* Right column */
-.profile-text {
-    flex: 1;
-}
-
-/* Links */
-.links {
-    margin-bottom: 15px;
-}
-
+/* ===== LINKS ===== */
 .links a {
-    color: #9E1B32;
+    color: var(--main-blue);
     text-decoration: none;
     font-weight: 500;
 }
@@ -394,13 +310,12 @@ h2 {
     text-decoration: underline;
 }
 
-/* About text */
-.about p {
-    line-height: 1.6;
-    margin-bottom: 10px;
+/* Email link (optional but nice) */
+a {
+    color: var(--main-blue);
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 .site-footer {
     text-align: center;
     margin: 40px 0;
