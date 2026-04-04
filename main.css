@@ -325,4 +325,6 @@ a {
 
 .title-content h1 {
     color: var(--main-blue);
+    font-size: 36px;
+    margin-bottom: 6px;
 }
