@@ -328,3 +328,82 @@ h2 {
     margin: 20px auto;
     padding: 0 20px;
 }
+
+/* ===== MAIN LAYOUT ===== */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Centered name */
+.name-header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.name-header h1 {
+    font-size: 36px;
+    color: #9E1B32; /* your red */
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Two-column layout */
+.profile {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Left column */
+.profile-photo img {
+    width: 220px;
+    border-radius: 6px;
+}
+
+.profile-photo address {
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 14px;
+}
+
+/* Right column */
+.profile-text {
+    flex: 1;
+}
+
+/* Links */
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    color: #9E1B32;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* About text */
+.about p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    margin: 40px 0;
+    color: #777;
+    font-size: 14px;
+}
