@@ -85,49 +85,43 @@ section {
     position: sticky;
     top: 0;
     z-index: 1000;
-
     display: flex;
-    justify-content: center;   /* center whole navbar block */
+    justify-content: center;
 }
 
-/* INNER CONTAINER (NEW) */
 .navbar-inner {
     width: 100%;
     max-width: 1000px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 10px 24px;
+    box-sizing: border-box;
 }
 
-/* LEFT SIDE (logo + mobile icon) */
 .navbar-top {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-/* LOGO */
 .logo-container {
     display: flex;
     align-items: center;
 }
 
 .navbar-logo {
-    height: 34px; /* slightly smaller = cleaner */
+    height: 34px;
     width: auto;
+    vertical-align: middle;
 }
 
-/* MENU (RIGHT SIDE) */
 .menu {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* LINKS */
 .navbar a {
     color: var(--main-blue);
     text-decoration: none;
@@ -144,7 +138,6 @@ section {
     color: var(--hover-blue);
 }
 
-/* MOBILE ICON */
 .icon {
     display: none;
     font-size: 26px;
@@ -278,6 +271,7 @@ section {
     margin-top: 18px;
     flex-wrap: wrap;
 }
+
 .button {
     display: inline-block;
     padding: 8px 14px;
@@ -297,11 +291,9 @@ section {
     color: var(--white);
 }
 
-
 /* ============================= */
 /*          BOTTOM LINE          */
 /* ============================= */
-
 
 .bottom-line {
     max-width: 1000px;
@@ -314,7 +306,6 @@ section {
     );
     margin: 30px auto 10px auto;
 }
-
 
 /* ============================= */
 /*           FOOTER              */
@@ -367,7 +358,6 @@ section {
     color: #555;
     font-family: "Inter", Arial, sans-serif;
 }
-
 
 /* ============================= */
 /*         RESEARCH PAGE         */
@@ -477,7 +467,6 @@ section {
         font-size: 1.25rem;
     }
 }
-
 
 /* ============================= */
 /*         TEACHING PAGE         */
@@ -630,7 +619,7 @@ section {
 /* ============================= */
 
 @media screen and (max-width: 768px) {
-    .navbar {
+    .navbar-inner {
         flex-direction: column;
         align-items: stretch;
         padding: 8px 20px;
