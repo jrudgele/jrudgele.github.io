@@ -81,39 +81,58 @@ section {
 
 .navbar {
     background-color: var(--soft-bg);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px 24px;
-    gap: 14px;
     border-bottom: 1px solid var(--line-gray);
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    display: flex;
+    justify-content: center;   /* center whole navbar block */
 }
 
+/* INNER CONTAINER (NEW) */
+.navbar-inner {
+    width: 100%;
+    max-width: 1000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 24px;
+}
+
+/* LEFT SIDE (logo + mobile icon) */
+.navbar-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* LOGO */
 .logo-container {
     display: flex;
     align-items: center;
 }
 
 .navbar-logo {
-    height: 38px;
+    height: 34px; /* slightly smaller = cleaner */
     width: auto;
-    vertical-align: middle;
 }
 
+/* MENU (RIGHT SIDE) */
 .menu {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
 }
 
+/* LINKS */
 .navbar a {
     color: var(--main-blue);
     text-decoration: none;
     font-size: 17px;
-    padding: 8px 6px;
+    padding: 6px 4px;
     font-family: "Inter", Arial, sans-serif;
     font-weight: 500;
     transition: color 0.2s ease, border-bottom 0.2s ease;
@@ -125,9 +144,10 @@ section {
     color: var(--hover-blue);
 }
 
+/* MOBILE ICON */
 .icon {
     display: none;
-    font-size: 28px;
+    font-size: 26px;
     cursor: pointer;
     color: var(--main-blue);
 }
