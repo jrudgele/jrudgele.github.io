@@ -292,7 +292,7 @@ section {
         #d9dde3,
         transparent
     );
-    margin: 40px auto 10px auto;
+    margin: 30px auto 10px auto;
 }
 
 /* ============================= */
@@ -305,7 +305,7 @@ section {
 
 .site-footer {
     max-width: 1000px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 20px auto;
     padding: 0 24px;
     font-family: "Inter", Arial, sans-serif;
     font-size: 14px;
