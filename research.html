@@ -3,71 +3,95 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joao Rudge Leite - Research</title>
-    <link rel="stylesheet" href="main.css">
+    <title>João Rudge Leite | Research</title>
+    <meta name="description" content="Research by João Rudge Leite in macroeconomics, banking, and international finance.">
     <meta name="google-site-verification" content="V0t5ypDAlo7KNVjGEvB9UZMBwe-qi1gKn1oF9N4A50M" />
+
+    <link rel="stylesheet" href="main.css">
     <link rel="icon" href="https://jrudgele.github.io/Initial_Icon.ico"/>
-	
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	
-   <!-- Navigation Bar -->
-  <div id="navbar-placeholder"></div>
-   
-    <!-- Title Section -->
-    <header class="title-container">
-        <div class="title-content">
-            <h1>Research</h1> 
-        </div>
-    </header>
 
-<div class="container">
-    <!-- About Section -->
-    <div class="research-container">
-        <h2>Working Papers</h2>
- 		<p>
-            <a href="https://jrudgele.github.io/Funding_Fragility.pdf" target="_blank"> A Model of Bank Failures: Funding Frictions and the Dynamics Before Collapse</a>, 
-            <a href="javascript:void(0);" onclick="visib('fund_fric')" >[Abstract]</a>
-	        </p>
-	        <div id="fund_fric" style="display: none;">
-	            <p align="justify" style="margin-left: 0px;">
-					This paper develops a quantitative model of bank failures to study how funding maturity and debt dilution shape balance-sheet dynamics and the timing of default. Empirically, banks approaching failure increase leverage, rely more heavily on time deposits, and experience compressing net interest margins and rising credit losses. Motivated by these patterns, the model features heterogeneous banks that choose between short- and long-maturity liabilities under limited commitment and capital regulation. Time deposits reduce rollover risk and smooth liquidity needs, but because equity can be rebuilt only through retained earnings, long-maturity funding creates incentives to dilute outstanding creditors through additional issuance. This debt-dilution channel amplifies fragility as fundamentals deteriorate, generating endogenous default and reproducing key pre-failure dynamics observed in the data. Overall, the results highlight liability-side incentives as a central driver of bank fragility.
-	        </p>
-        </div>
-        <p>
-		
-        <p>
-            <a href="https://jrudgele.github.io/Heterogeneous_Banks.pdf" target="_blank">Heterogeneous Bank Funding and The Transmission of Monetary Policy </a>, 
-            <a href="javascript:void(0);" onclick="visib('het_banks')" >[Abstract]</a>
-        </p>
-        <div id="het_banks" style="display: none;">
-            <p align="justify" style="margin-left: 0px;">
-            This paper analyzes how heterogeneity in banks’ funding structures shapes the transmission of monetary policy. Banks finance themselves with liabilities that differ in maturity,
-			and I document empirically that banks with longer-maturity liabilities are less responsive to monetary policy shocks. To interpret this finding, I develop a heterogeneous-
-			bank macroeconomic model with endogenous default and funding choices. In the model, maturity choice arises from banks’ limited ability to raise new debt, due either to limited commitment or regulatory constraints. Long-term liabilities help constrained banks
-			avoid liquidity shortfalls but entail higher funding costs. Using this framework, I quantify the aggregate implications of monetary policy and show that its effects depend
-			critically on the distribution of banks’ funding maturities.
-            </p>
-        </div>
-        <p>
-            <a href="https://jrudgele.github.io/Domestic_Banks.pdf"  target="_blank"> Banking Sector Exposure to Global Financial Cycle and Sovereign Debt Crises </a>, (with Jefferson Martinez)
-            <a href="javascript:void(0);" onclick="visib('bank_exposure')" >[Abstract]</a>
-        </p>
-        <div id="bank_exposure" style="display: none;">
-            <p align="justify" style="margin-left: 0px;">
-                We investigate how exposure to the global financial cycle influences credit cycles and sovereign default risk in emerging markets.
-                We document that emerging markets with financial sectors more reliant on foreign funding exhibit greater sensitivity to the Global Financial Cycle, proxied by the U.S. stock market volatility index (VIX).
-                During periods of heightened global risk premium, these economies experience reduced lending and rising CDS spreads for their governments.
-                Our model connects these phenomena, emphasizing the macro-financial linkages between global capital flows and domestic credit dynamics in emerging economies.
-            </p>
-        </div>
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
 
-    
-    </div>
-</div>
-	
-<script src="script.js"></script>
-	
+    <main class="research-page">
+        <header class="research-title">
+            <h1>Research</h1>
+        </header>
+
+        <section class="research-section">
+            <h2>Working Papers</h2>
+
+            <div class="paper-list">
+
+                <article class="paper-item">
+                    <h3 class="paper-title">
+                        <a href="https://jrudgele.github.io/Funding_Fragility.pdf" target="_blank" rel="noopener noreferrer">
+                            A Model of Bank Failures: Funding Frictions and the Dynamics Before Collapse
+                        </a>
+                    </h3>
+
+                    <div class="paper-links">
+                        <a href="javascript:void(0);" onclick="visib('fund_fric')">Abstract</a>
+                    </div>
+
+                    <div id="fund_fric" style="display: none;">
+                        <p class="paper-description">
+                            This paper develops a quantitative model of bank failures to study how funding maturity and debt dilution shape balance-sheet dynamics and the timing of default. Empirically, banks approaching failure increase leverage, rely more heavily on time deposits, and experience compressing net interest margins and rising credit losses. Motivated by these patterns, the model features heterogeneous banks that choose between short- and long-maturity liabilities under limited commitment and capital regulation. Time deposits reduce rollover risk and smooth liquidity needs, but because equity can be rebuilt only through retained earnings, long-maturity funding creates incentives to dilute outstanding creditors through additional issuance. This debt-dilution channel amplifies fragility as fundamentals deteriorate, generating endogenous default and reproducing key pre-failure dynamics observed in the data. Overall, the results highlight liability-side incentives as a central driver of bank fragility.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="paper-item">
+                    <h3 class="paper-title">
+                        <a href="https://jrudgele.github.io/Heterogeneous_Banks.pdf" target="_blank" rel="noopener noreferrer">
+                            Heterogeneous Bank Funding and the Transmission of Monetary Policy
+                        </a>
+                    </h3>
+
+                    <div class="paper-links">
+                        <a href="javascript:void(0);" onclick="visib('het_banks')">Abstract</a>
+                    </div>
+
+                    <div id="het_banks" style="display: none;">
+                        <p class="paper-description">
+                            This paper analyzes how heterogeneity in banks’ funding structures shapes the transmission of monetary policy. Banks finance themselves with liabilities that differ in maturity, and I document empirically that banks with longer-maturity liabilities are less responsive to monetary policy shocks. To interpret this finding, I develop a heterogeneous-bank macroeconomic model with endogenous default and funding choices. In the model, maturity choice arises from banks’ limited ability to raise new debt, due either to limited commitment or regulatory constraints. Long-term liabilities help constrained banks avoid liquidity shortfalls but entail higher funding costs. Using this framework, I quantify the aggregate implications of monetary policy and show that its effects depend critically on the distribution of banks’ funding maturities.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="paper-item">
+                    <h3 class="paper-title">
+                        <a href="https://jrudgele.github.io/Domestic_Banks.pdf" target="_blank" rel="noopener noreferrer">
+                            Banking Sector Exposure to Global Financial Cycle and Sovereign Debt Crises
+                        </a>
+                    </h3>
+
+                    <p class="paper-coauthor">with Jefferson Martinez</p>
+
+                    <div class="paper-links">
+                        <a href="javascript:void(0);" onclick="visib('bank_exposure')">Abstract</a>
+                    </div>
+
+                    <div id="bank_exposure" style="display: none;">
+                        <p class="paper-description">
+                            We investigate how exposure to the global financial cycle influences credit cycles and sovereign default risk in emerging markets. We document that emerging markets with financial sectors more reliant on foreign funding exhibit greater sensitivity to the Global Financial Cycle, proxied by the U.S. stock market volatility index (VIX). During periods of heightened global risk premium, these economies experience reduced lending and rising CDS spreads for their governments. Our model connects these phenomena, emphasizing the macro-financial linkages between global capital flows and domestic credit dynamics in emerging economies.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
