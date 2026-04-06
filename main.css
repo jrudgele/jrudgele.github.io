@@ -3,11 +3,11 @@
 /* ============================= */
 
 :root {
-    --main-blue: #0F4C81;   /* Pantone Classic Blue */
-    --text-gray: #4B4F54;   /* Phantom Gray */
+    --main: #0F4C81;   /* Pantone Classic Blue */
+    --text: #4B4F54;   /* Phantom Gray */
     --soft-bg: #F9F9F9;
-    --line-gray: #D9DDE3;
-    --hover-blue: #09315c;
+    --line: #D9DDE3;
+    --hover: #09315c;
     --white: #FFFFFF;
     --shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     --radius: 12px;
@@ -19,7 +19,7 @@
 
 body {
     background-color: var(--soft-bg);
-    color: var(--text-gray);
+    color: var(--text);
     font-family: "Crimson Text", Georgia, serif;
     font-size: 18px;
     line-height: 1.65;
@@ -29,19 +29,19 @@ body {
 
 p {
     font-size: 1.1rem;
-    color: var(--text-gray);
+    color: var(--text);
     margin-top: 0;
     margin-bottom: 1.2rem;
 }
 
 a {
-    color: var(--main-blue);
+    color: var(--main);
     text-decoration: none;
     transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 a:hover {
-    color: var(--hover-blue);
+    color: var(--hover);
 }
 
 img {
@@ -59,7 +59,7 @@ section {
 }
 
 .classic-blue-background {
-    background-color: var(--main-blue);
+    background-color: var(--main);
     color: var(--white);
     padding: 20px;
 }
@@ -81,7 +81,7 @@ section {
 
 .navbar {
     background-color: var(--soft-bg);
-    border-bottom: 1px solid var(--line-gray);
+    border-bottom: 1px solid var(--line);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -123,7 +123,7 @@ section {
 }
 
 .navbar a {
-    color: var(--main-blue);
+    color: var(--main);
     text-decoration: none;
     font-size: 17px;
     padding: 6px 4px;
@@ -134,15 +134,15 @@ section {
 
 .navbar a:hover,
 .nav-link.active {
-    border-bottom: 2px solid var(--main-blue);
-    color: var(--hover-blue);
+    border-bottom: 2px solid var(--main);
+    color: var(--hover);
 }
 
 .icon {
     display: none;
     font-size: 26px;
     cursor: pointer;
-    color: var(--main-blue);
+    color: var(--main);
 }
 
 /* ============================= */
@@ -171,21 +171,21 @@ section {
     font-size: 46px;
     font-weight: 650;
     letter-spacing: 0.3px;
-    color: var(--main-blue);
+    color: var(--main);
     margin: 0 0 8px 0;
 }
 
 .title-subtitle {
     font-family: "Inter", Arial, sans-serif;
     font-size: 17px;
-    color: var(--text-gray);
+    color: var(--text);
     margin-bottom: 10px;
 }
 
 .title-content hr {
     width: 85px;
     height: 3px;
-    background-color: var(--main-blue);
+    background-color: var(--main);
     border: none;
     margin: 14px auto 0 auto;
     border-radius: 999px;
@@ -242,7 +242,7 @@ section {
 .about-container h2,
 .research-container h2 {
     font-family: "Inter", Arial, sans-serif;
-    color: var(--main-blue);
+    color: var(--main);
     font-size: 2rem;
     font-weight: 650;
     margin-top: 0;
@@ -275,8 +275,8 @@ section {
 .button {
     display: inline-block;
     padding: 8px 14px;
-    border: 1px solid var(--main-blue);
-    color: var(--main-blue);
+    border: 1px solid var(--main);
+    color: var(--main);
     background-color: transparent;
     border-radius: 6px;
     font-family: "Inter", Arial, sans-serif;
@@ -287,7 +287,7 @@ section {
 }
 
 .button:hover {
-    background-color: var(--main-blue);
+    background-color: var(--main);
     color: var(--white);
 }
 
@@ -339,7 +339,7 @@ section {
 }
 
 .footer-links a:hover {
-    color: var(--main-blue);
+    color: var(--main);
 }
 
 /* ============================= */
@@ -348,7 +348,7 @@ section {
 
 .name-header h1 {
     font-size: 36px;
-    color: var(--main-blue);
+    color: var(--main);
     margin-bottom: 5px;
     font-family: "Inter", Arial, sans-serif;
 }
@@ -379,7 +379,7 @@ section {
     font-family: "Inter", Arial, sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    color: var(--main-blue);
+    color: var(--main);
     margin: 0;
 }
 
@@ -391,7 +391,7 @@ section {
     font-family: "Inter", Arial, sans-serif;
     font-size: 2rem;
     font-weight: 650;
-    color: var(--main-blue);
+    color: var(--main);
     margin-bottom: 28px;
 }
 
@@ -403,7 +403,7 @@ section {
 
 .paper-item {
     padding-bottom: 22px;
-    border-bottom: 1px solid var(--line-gray);
+    border-bottom: 1px solid var(--line);
 }
 
 .paper-item:last-child {
@@ -414,12 +414,12 @@ section {
     font-family: "Crimson Text", Georgia, serif;
     font-size: 1.45rem;
     line-height: 1.45;
-    color: var(--main-blue);
+    color: var(--main);
     margin: 0 0 8px 0;
 }
 
 .paper-title a {
-    color: var(--main-blue);
+    color: var(--main);
     text-decoration: none;
 }
 
@@ -431,7 +431,7 @@ section {
 .paper-status,
 .paper-description {
     font-size: 1.05rem;
-    color: var(--text-gray);
+    color: var(--text);
     margin: 4px 0;
 }
 
@@ -446,7 +446,7 @@ section {
     font-family: "Inter", Arial, sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
-    color: var(--main-blue);
+    color: var(--main);
     text-decoration: none;
 }
 
@@ -490,7 +490,7 @@ section {
     font-family: "Inter", Arial, sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    color: var(--main-blue);
+    color: var(--main);
     margin: 0;
 }
 
@@ -518,7 +518,7 @@ section {
     font-family: "Inter", Arial, sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
-    color: var(--main-blue);
+    color: var(--main);
     margin-bottom: 20px;
 }
 
@@ -528,7 +528,7 @@ section {
     display: block;
     width: 45px;
     height: 2px;
-    background-color: var(--main-blue);
+    background-color: var(--main);
     margin-top: 6px;
 }
 
@@ -550,14 +550,14 @@ section {
 .course-title {
     font-family: "Crimson Text", Georgia, serif;
     font-size: 1.4rem;
-    color: var(--main-blue);
+    color: var(--main);
     margin: 0 0 6px 0;
 }
 
 /* Course metadata (Undergraduate, University, etc.) */
 .course-meta {
     font-size: 1.05rem;
-    color: var(--text-gray);
+    color: var(--text);
     margin: 0;
 }
 
@@ -604,7 +604,7 @@ section {
 /* ============================= */
 
 .links a {
-    color: var(--main-blue);
+    color: var(--main);
     text-decoration: none;
     font-weight: 500;
     font-family: "Inter", Arial, sans-serif;
@@ -636,7 +636,7 @@ section {
         display: block !important;
         font-size: 28px;
         cursor: pointer;
-        color: var(--main-blue);
+        color: var(--main);
         margin-right: 10px;
     }
 
