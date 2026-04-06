@@ -279,15 +279,59 @@ section {
 
 
 /* ============================= */
+/*          BOTTOM LINE          */
+/* ============================= */
+
+
+.bottom-line {
+    max-width: 1000px;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #d9dde3,
+        transparent
+    );
+    margin: 70px auto 40px auto;
+}
+
+/* ============================= */
 /*            FOOTER             */
 /* ============================= */
 
+/* ============================= */
+/*           FOOTER              */
+/* ============================= */
+
 .site-footer {
-    text-align: center;
-    margin: 50px 0 30px;
-    color: #777;
-    font-size: 14px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    padding: 0 24px;
     font-family: "Inter", Arial, sans-serif;
+    font-size: 14px;
+    color: #777;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Right-side links */
+.footer-links {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-links a {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--main-blue);
 }
 
 /* ============================= */
