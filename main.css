@@ -253,12 +253,11 @@ section {
 
 .button-row {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 12px;
-    margin-top: 14px;
+    margin-top: 18px;
     flex-wrap: wrap;
 }
-
 .button {
     display: inline-block;
     padding: 8px 14px;
@@ -277,6 +276,7 @@ section {
     background-color: var(--main-blue);
     color: var(--white);
 }
+
 
 /* ============================= */
 /*            FOOTER             */
