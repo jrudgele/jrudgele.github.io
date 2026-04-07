@@ -148,7 +148,6 @@ section {
 /* ============================= */
 /*         TITLE SECTION         */
 /* ============================= */
-/* Keep this only if other pages still use it */
 
 .title-container {
     display: flex;
@@ -192,6 +191,7 @@ section {
     border-radius: 999px;
 }
 
+/* Optional tagline if you add one later */
 .tagline {
     font-family: "Inter", Arial, sans-serif;
     font-size: 14px;
@@ -207,15 +207,14 @@ section {
     display: grid;
     grid-template-columns: 360px 1fr;
     gap: 60px;
-    max-width: 1200px;
+    max-width: 1200px;   /* was 1000px */
     margin: 0 auto 50px auto;
     padding: 32px 24px;
-    align-items: start;
 }
 
 /* PHOTO SECTION */
 .photo-container {
-    max-width: 360px;
+    max-width:  360px;
     text-align: center;
 }
 
@@ -239,37 +238,6 @@ section {
     max-width: 800px;
 }
 
-/* New homepage name block */
-.name-block {
-    margin-bottom: 20px;
-}
-
-.name-block h1 {
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 2.6rem;
-    font-weight: 650;
-    color: var(--main);
-    margin: 0 0 6px 0;
-    line-height: 1.15;
-}
-
-.name-subtitle {
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 1rem;
-    color: #6b7280;
-    margin: 0 0 10px 0;
-    text-align: left;
-}
-
-.name-block hr {
-    width: 72px;
-    height: 3px;
-    background-color: var(--main);
-    border: none;
-    border-radius: 999px;
-    margin: 0 0 18px 0;
-}
-
 .about-container h2,
 .research-container h2 {
     font-family: "Inter", Arial, sans-serif;
@@ -283,7 +251,7 @@ section {
 .about-container p {
     text-align: justify;
     line-height: 1.75;
-    max-width: 680px;
+    max-width: 600px;
 }
 
 /* Research width if needed on other pages */
@@ -731,15 +699,6 @@ section {
         max-width: 100%;
     }
 
-    .name-block h1 {
-        font-size: 2.1rem;
-        text-align: left;
-    }
-
-    .name-subtitle {
-        text-align: left;
-    }
-
     .button-row {
         justify-content: center;
     }
@@ -771,9 +730,5 @@ section {
 
     .photo-container img {
         max-width: 210px;
-    }
-
-    .name-block h1 {
-        font-size: 1.9rem;
     }
 }
