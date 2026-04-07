@@ -207,8 +207,10 @@ section {
     display: grid;
     grid-template-columns: 360px 1fr;
     gap: 60px;
-    max-width: 1200px;   /* was 1000px */
-    margin: 0 auto 50px auto;
+    max-width: 1200px;
+    
+    margin: 40px auto 50px auto;  /* ← THIS is the key change */
+    
     padding: 32px 24px;
 }
 
