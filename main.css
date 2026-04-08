@@ -20,7 +20,7 @@
 body {
     background-color: var(--soft-bg);
     color: var(--text);
-    font-family: "Crimson Text", Georgia, serif;
+    font-family: "Source Serif 4", Georgia, serif;
     font-size: 18px;
     line-height: 1.65;
     margin: 0;
@@ -58,18 +58,6 @@ section {
     margin-bottom: 40px;
 }
 
-.classic-blue-background {
-    background-color: var(--main);
-    color: var(--white);
-    padding: 20px;
-}
-
-.classic-blue-background span {
-    font-size: 40px;
-    color: var(--white);
-    font-family: "Inter", Arial, sans-serif;
-    font-weight: 600;
-}
 
 .about {
     margin-top: 40px;
@@ -127,7 +115,7 @@ section {
     text-decoration: none;
     font-size: 17px;
     padding: 6px 4px;
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-weight: 500;
     transition: color 0.2s ease, border-bottom 0.2s ease;
 }
@@ -167,7 +155,7 @@ section {
 }
 
 .title-content h1 {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 46px;
     font-weight: 650;
     letter-spacing: 0.3px;
@@ -176,7 +164,7 @@ section {
 }
 
 .title-subtitle {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 17px;
     color: var(--text);
     margin-bottom: 10px;
@@ -193,7 +181,7 @@ section {
 
 /* Optional tagline if you add one later */
 .tagline {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 14px;
     color: #6b7280;
     margin-top: 6px;
@@ -242,7 +230,7 @@ section {
 
 .about-container h2,
 .research-container h2 {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     color: var(--main);
     font-size: 2rem;
     font-weight: 650;
@@ -261,7 +249,7 @@ section {
 }
 
 .name-block h1 {
-    font-family: "Crimson Text", Georgia, serif;
+    font-family: "Manrope", sans-serif;
     font-size: 2.6rem;
     font-weight: 650;
     color: var(--main);
@@ -269,7 +257,7 @@ section {
 }
 
 .name-subtitle {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 1rem;
     color: #6b7280;
     margin-bottom: 10px;
@@ -304,7 +292,7 @@ section {
     color: var(--main);
     background-color: transparent;
     border-radius: 6px;
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
@@ -340,7 +328,7 @@ section {
     max-width: 1000px;
     margin: 0 auto 20px auto;
     padding: 0 24px;
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 14px;
     color: #777;
 }
@@ -375,13 +363,13 @@ section {
     font-size: 36px;
     color: var(--main);
     margin-bottom: 5px;
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 .subtitle {
     font-size: 16px;
     color: #555;
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 /* ============================= */
@@ -401,7 +389,7 @@ section {
 }
 
 .research-title h1 {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: var(--main);
@@ -413,7 +401,7 @@ section {
 }
 
 .research-section h2 {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 2rem;
     font-weight: 650;
     color: var(--main);
@@ -436,7 +424,7 @@ section {
 }
 
 .paper-title {
-    font-family: "Crimson Text", Georgia, serif;
+   font-family: "Manrope", sans-serif;
     font-size: 1.45rem;
     line-height: 1.45;
     color: var(--main);
@@ -468,7 +456,7 @@ section {
 }
 
 .paper-links a {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
     color: var(--main);
@@ -512,7 +500,7 @@ section {
 }
 
 .teaching-title h1 {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: var(--main);
@@ -540,7 +528,7 @@ section {
 /* ===== SCHOOL TITLE ===== */
 
 .school-title {
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--main);
@@ -573,7 +561,7 @@ section {
 
 /* Course title */
 .course-title {
-    font-family: "Crimson Text", Georgia, serif;
+    font-family: "Manrope", sans-serif;
     font-size: 1.4rem;
     color: var(--main);
     margin: 0 0 6px 0;
@@ -632,7 +620,7 @@ section {
     color: var(--main);
     text-decoration: none;
     font-weight: 500;
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 .links a:hover {
