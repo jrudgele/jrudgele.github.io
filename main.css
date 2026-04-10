@@ -291,7 +291,7 @@ section {
 }
 
 .name-block hr {
-    width: 84px;              /* slightly longer */
+    width: 244px;              /* slightly longer */
     height: 1.5px;
     background-color: var(--main);
     opacity: 0.5;
