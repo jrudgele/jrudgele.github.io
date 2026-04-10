@@ -291,12 +291,12 @@ section {
 }
 
 .name-block hr {
-    width: 52px;              /* slightly longer */
+    width: 84px;              /* slightly longer */
     height: 1.5px;
     background-color: var(--main);
     opacity: 0.5;
     border: none;
-    margin: 14px auto 20px auto;  /* centers it */
+    margin: 14px  20px ; 
 }
 
 /* ============================= */
