@@ -34,9 +34,12 @@ function setupSecretLink() {
     const trigger = document.getElementById("secret-trigger");
     if (!trigger) return;
 
-    trigger.addEventListener("dblclick", function (e) {
-        e.preventDefault(); // prevent going to index
-        window.location.href = "extras.html";
+    trigger.addEventListener("click", function (e) {
+        if (e.shiftKey) {
+            e.preventDefault(); // stop normal navigation
+            window.location.href = "extras.html";
+        }
+        // otherwise → normal click goes to index.html automatically
     });
 }
 
