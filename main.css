@@ -150,6 +150,27 @@ section {
 }
 
 /* ============================= */
+/*     NAVIGATION BAR EXTRA      */
+/* ============================= */
+
+.extras-nav {
+    max-width: 1000px;
+    margin: 30px auto 10px;
+    padding: 0 20px;
+}
+
+.extras-nav a {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    color: var(--main); /* your Pantone blue */
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.extras-nav a:hover {
+    opacity: 1;
+}
+/* ============================= */
 /*         TITLE SECTION         */
 /* ============================= */
 
