@@ -31,32 +31,12 @@ function setActiveNavLink() {
 }
 
 function setupSecretLink() {
-    const secretTrigger = document.getElementById("secret-trigger");
-    if (!secretTrigger) return;
+    const trigger = document.getElementById("secret-trigger");
+    if (!trigger) return;
 
-    let clicks = 0;
-    let timer;
-
-    secretTrigger.addEventListener("click", function (e) {
-        clicks++;
-
-        // If this is the FIRST click, start timer
-        if (clicks === 1) {
-            timer = setTimeout(() => {
-                clicks = 0;
-                // Let next click behave normally
-            }, 1500); // 1.5 seconds window
-        }
-
-        // Prevent navigation ONLY while trying secret
-        if (clicks < 3) {
-            e.preventDefault();
-        }
-
-        if (clicks === 5) {
-            clearTimeout(timer);
-            window.location.href = "extras.html";
-        }
+    trigger.addEventListener("dblclick", function (e) {
+        e.preventDefault(); // prevent going to index
+        window.location.href = "extras.html";
     });
 }
 
