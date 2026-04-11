@@ -36,8 +36,15 @@ function setupSecretLink() {
     if (!secretTrigger) return;
 
     let clicks = 0;
-    secretTrigger.addEventListener("click", function () {
+
+    secretTrigger.addEventListener("click", function (e) {
         clicks++;
+
+        // Prevent navigation until 5th click
+        if (clicks < 5) {
+            e.preventDefault();
+        }
+
         if (clicks === 5) {
             window.location.href = "extras.html";
         }
