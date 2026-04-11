@@ -30,23 +30,35 @@ function setActiveNavLink() {
     });
 }
 
-let clicks = 0;
-let timer;
+function setupSecretLink() {
+    const secretTrigger = document.getElementById("secret-trigger");
+    if (!secretTrigger) return;
 
-secretTrigger.addEventListener("click", function (e) {
-    clicks++;
+    let clicks = 0;
+    let timer;
 
-    if (clicks < 5) {
-        e.preventDefault();
-    }
+    secretTrigger.addEventListener("click", function (e) {
+        clicks++;
 
-    clearTimeout(timer);
-    timer = setTimeout(() => clicks = 0, 1500); // reset after 1.5s
+        // If this is the FIRST click, start timer
+        if (clicks === 1) {
+            timer = setTimeout(() => {
+                clicks = 0;
+                // Let next click behave normally
+            }, 1500); // 1.5 seconds window
+        }
 
-    if (clicks === 5) {
-        window.location.href = "extras.html";
-    }
-});
+        // Prevent navigation ONLY while trying secret
+        if (clicks < 3) {
+            e.preventDefault();
+        }
+
+        if (clicks === 5) {
+            clearTimeout(timer);
+            window.location.href = "extras.html";
+        }
+    });
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     fetch("navbar.html")
