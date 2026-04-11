@@ -170,6 +170,61 @@ section {
 .extras-nav a:hover {
     opacity: 1;
 }
+
+/* ============================= */
+/*        EXTRA SECTION          */
+/* ============================= */
+
+.extras-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* ============================= */
+/*          PHOTO SETUP          */
+/* ============================= */
+
+.photo-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    font-size: 0.85rem;
+    padding: 8px 10px;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+}
+
+.photo-card:hover .photo-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* ============================= */
 /*         TITLE SECTION         */
 /* ============================= */
