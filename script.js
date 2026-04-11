@@ -30,26 +30,23 @@ function setActiveNavLink() {
     });
 }
 
-function setupSecretLink() {
-    const secretTrigger = document.getElementById("secret-trigger");
+let clicks = 0;
+let timer;
 
-    if (!secretTrigger) return;
+secretTrigger.addEventListener("click", function (e) {
+    clicks++;
 
-    let clicks = 0;
+    if (clicks < 5) {
+        e.preventDefault();
+    }
 
-    secretTrigger.addEventListener("click", function (e) {
-        clicks++;
+    clearTimeout(timer);
+    timer = setTimeout(() => clicks = 0, 1500); // reset after 1.5s
 
-        // Prevent navigation until 5th click
-        if (clicks < 5) {
-            e.preventDefault();
-        }
-
-        if (clicks === 5) {
-            window.location.href = "extras.html";
-        }
-    });
-}
+    if (clicks === 5) {
+        window.location.href = "extras.html";
+    }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     fetch("navbar.html")
