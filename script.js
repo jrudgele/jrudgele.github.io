@@ -23,7 +23,6 @@ function setActiveNavLink() {
         if (!href) return;
 
         const linkPath = href.replace(".html", "");
-
         if (linkPath === currentPath) {
             link.classList.add("active");
         }
@@ -35,21 +34,21 @@ function setupSecretLink() {
     if (!trigger) return;
 
     trigger.addEventListener("click", function (e) {
-        if (e.shiftKey) {
-            e.preventDefault(); // stop normal navigation
+        if (e.altKey) {
+            e.preventDefault();
             window.location.href = "extras.html";
         }
-        // otherwise → normal click goes to index.html automatically
     });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    const placeholder = document.getElementById("navbar-placeholder");
+    if (!placeholder) return;
+
     fetch("navbar.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("navbar-placeholder").innerHTML = data;
-
-            // Run these AFTER navbar is inserted
+            placeholder.innerHTML = data;
             setActiveNavLink();
             setupSecretLink();
         })
